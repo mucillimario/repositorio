@@ -1,0 +1,285 @@
+/* Mario Mucilli - Codigo :)
+
+/* 1 rem = 10 px */
+
+html {
+    font-size: 62.5%;
+}
+
+/* Reseteo de espacios a los lados y hacia adentro de las cajas*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    margin: 0rem 10rem 0rem 10rem;
+
+}
+
+/* CSS DEL NAV */
+header {
+    display: flex;
+    align-items: center;
+    background-color: rgb(221, 207, 13);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+nav {
+    flex: 1;
+}
+
+.header__nav-li {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-weight: 700;
+}
+
+.header__nav-li a {
+    color: rgb(15, 191, 38);
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: #3b0c7e;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 1rem;
+
+}
+
+.header__nav-li a:hover {
+    background-color: rgb(129, 121, 1);
+    color: rgb(24, 4, 4);
+}
+
+.header__nav-img-logo {
+    width: 12rem;
+    margin-left: 5rem;
+
+}
+
+/* CSS SECTION CARRUSEL IMG */
+
+.img-carrusel {
+    text-align: center;
+    width: 100%;
+}
+
+/* CSS SECTION CARDS HORIZONTALES */
+
+.section-card-h {
+    background-color: chocolate;
+    
+
+}
+
+.div-card-horizontal {
+    background-color: rgb(111, 198, 44);
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.card-h-img {
+    width: 50%;
+}
+
+.card-h-text {
+    margin: 0rem 3rem 0rem 3rem;
+    text-align: left;
+}
+
+.card-h-text-right {
+    margin: 0rem 3rem 0rem 3rem;
+    text-align: right;
+}
+
+.img-card-h {
+    width: 100%;
+}
+
+/* CSS SECTION CARD VERTICALES */
+
+.section-card-v {
+    background-color: rgb(26, 24, 144);
+    padding-bottom: 3rem;
+}
+
+.div-card-v-index {
+
+    display: flex;
+    justify-content:space-between;   
+}
+
+.div-card-v-trabajos {
+    display: ;
+    justify-content:space-between;   
+
+}
+
+.card-v-img {
+    width: 30vh;
+    margin: 1rem 1rem;
+}
+
+/* CSS DEL FORMS */
+
+.form-input{
+    margin: 10px;
+    display:flex;
+    width: 100%;
+
+}
+
+.form-textarea{
+    margin: 10px;
+    display:flex;
+    width: 100%;
+    height: 10rem;
+
+}
+
+/* CSS DEL FOOTER */
+
+footer {
+    background-color: rgb(45, 45, 45);
+    padding: 5rem 10rem;
+}
+
+.footer__contendor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer__caja {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo{
+    width: 15rem;
+}
+
+.footer__derechos {
+    text-align: center;
+    padding: 2rem;
+}
+
+
+footer p {
+    color: antiquewhite;
+    font-size: 1.3rem;
+}
+
+footer a {
+    color: antiquewhite;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.footer__derechos p {
+    color: antiquewhite;
+    font-size: 1.3rem;
+
+}
+
+.footer__caja li {
+    color: antiquewhite;
+    font-size: 1.3rem;
+    list-style-type: none;
+}
+
+/* Estilos de textos   */
+
+h1 {
+    font-size: 2.5rem;
+    color: blueviolet;
+    text-align: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: blanchedalmond;
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: blanchedalmond;
+    padding: 1.5rem 0rem 1.5rem 0rem;
+
+}
+
+p {
+    font-size: 1.3rem;
+    color: rgb(16, 24, 255);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+
+/* Pages CONTACTO */
+
+.section-contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-contacto h2 {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+}
+
+.mapa {
+    background-color: #032a64;
+    padding: 1rem 6rem 2rem 6rem;
+}
+
+
+.formulario {
+    background-color: #444;
+    padding: 1rem 6rem 2rem 6rem;
+}
+
+.formulario p {
+    color: blanchedalmond;
+}
+
+.section-contacto h2 {
+    padding-left: 0rem;
+}
+
+label {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.boton {
+
+    background-color: #b5b5b5;
+    padding: 0.5rem 2.5rem;
+    border-radius: 1rem;
+}
+
+
+.boton:hover {
+    background-color: aqua;
+}
