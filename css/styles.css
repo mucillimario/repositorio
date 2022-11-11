@@ -26,16 +26,13 @@ body {
     }
 
 }
-asdasd
-asdasdas
-asda
-aside
+
 /*APLICARIA DESDE 1024PX en adelante - MODELO DESKTOP */
 @media screen and (min-width: 1024px) {
 
     body {
         font-family: 'Roboto', sans-serif;
-        background-color: #50a728;
+        background-color: #754599;
 
     }
 }
