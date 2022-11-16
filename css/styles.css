@@ -12,6 +12,11 @@ html {
     padding: 0;
 }
 
+
+img{
+    max-width: 100%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #aee89d;
@@ -23,15 +28,15 @@ body {
     background-color: rgb(202, 187, 187);
     font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 100px 100px auto auto auto 350px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 100px auto auto  350px 350px;
     grid-template-areas:
-        "header header header header"
-        "nav nav nav nav"
-        "carrusel carrusel carrusel carrusel"
-        "main main main main"
-        "itrabajos1 itrabajos2 itrabajos3 itrabajos4"
-        "footer footer footer footer";
+        "header        header"
+        "nav           nav"
+        "carrusel      carrusel"
+        "main1         main2"
+        "trabajos     trabajos"
+        "footer        footer";
 }
 
 /* CSS HEADER */
@@ -60,7 +65,7 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 100%;
+
 }
 
 ul {
@@ -68,17 +73,14 @@ ul {
     flex-wrap: wrap;
     
 }
-
-
-
-
 .nav-li {
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
     list-style-type: none;
     font-weight: 400;
-    v margin-bottom: 0px;
-    padding-left: 0px;    
+    margin-bottom: 0px;
+    padding-left: 0px; 
+    width: 80%;   
 
 }
 
@@ -113,66 +115,72 @@ ul {
 
 /* CSS MAIN */
 
-.main {
-    background-color: aqua;
-    grid-area: main;
+
+.img-card-h{
+    grid-area: main1;
+    background-color: #3b0c7e;
+    border:rgb(127, 18, 210) solid 1rem;
+    
 }
 
-/*
-.div-card-horizontal {
+.card-h-text{
+    grid-area: main2;
+    background-color: chartreuse;
+}
+
+/* .div-card-horizontal {
+    
     display: flex;
     padding-left: 2rem;
     padding-right: 2rem;
 }
 
 .card-h-text {
+    grid-area: mainizq1;
     margin: 0rem 3rem 0rem 3rem;
     text-align: left;
 }
 
 .card-h-text-right {
+    grid-area: mainder1;
     margin: 0rem 3rem 0rem 3rem;
     text-align: right;
-} */
+}  */
 
+.mainder1{
+background-color: #58174b;
+}
 
+.mainizq1{
+    background-color: #b13d9a;
+    }
 /* CSS INDEX-TRABAJOS */
 
-.index-trabajos {
-    background-color: rgb(89, 33, 143);
-
-    padding-bottom: 4rem;
-display: flex;
-    flex-wrap: wrap; */
-
-}
-.tiradetrabajos{
+.trabajos{
+    grid-area: trabajos;
+    background-color: #0e784a;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-around;
+
+
 }
 
 .card-v-img{
-    width:50%;
+    margin: 10px;
+    width: 265px;
+    min-width: 100px;
+
 }
 
-.itrabajos1 {
-    grid-area: itrabajos1;
-    background-color: #9ac64e73;
-    
-}
-.itrabajos2 {
-    grid-area: itrabajos2;
-    background-color: #383aad73;
-}
-.itrabajos3 {
-    grid-area: itrabajos3;
-    background-color: #37df9c73;
-}
-.itrabajos4 {
-    grid-area: itrabajos4;
-    background-color: #c037df73;
+.tiradetrabajos{
+    grid-area: trabajos;
+    background-color: #58174b;
+    display: flex;
+    flex-wrap: wrap;
+
+
 }
 
 /* CSS FOOTER */
