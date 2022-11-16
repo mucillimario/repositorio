@@ -121,8 +121,8 @@ ul {
 
 .img-card-h{
     grid-area: main1;
-    background-color: #3b0c7e;
-    border:rgb(127, 18, 210) solid 1rem;
+    width: 100%;
+    min-width: 50%;
     
 }
 
