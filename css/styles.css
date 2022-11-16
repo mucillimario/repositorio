@@ -114,7 +114,10 @@ ul {
 
 
 /* CSS MAIN */
-
+.main{
+    background-color: #aee89d;
+    display: flex;
+}
 
 .img-card-h{
     grid-area: main1;
