@@ -30,7 +30,7 @@ body {
         "nav nav nav nav"
         "carrusel carrusel carrusel carrusel"
         "main main main main"
-        "itrabajos itrabajos itrabajos itrabajos "
+        "itrabajos1 itrabajos2 itrabajos3 itrabajos4"
         "footer footer footer footer";
 }
 
@@ -60,11 +60,13 @@ body {
     display: flex;
     align-content: center;
     justify-content: center;
+    width: 100%;
 }
 
 ul {
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 
@@ -76,7 +78,8 @@ ul {
     list-style-type: none;
     font-weight: 400;
     v margin-bottom: 0px;
-    padding-left: 0px;
+    padding-left: 0px;    
+
 }
 
 .nav-li a {
@@ -137,7 +140,7 @@ ul {
 
 .index-trabajos {
     background-color: rgb(89, 33, 143);
-    grid-area: itrabajos;
+
     padding-bottom: 4rem;
 display: flex;
     flex-wrap: wrap; */
@@ -154,18 +157,22 @@ display: flex;
     width:50%;
 }
 
-.trabajos1 {
-    background-color: #37df9c73;
+.itrabajos1 {
+    grid-area: itrabajos1;
+    background-color: #9ac64e73;
     
 }
-.trabajos2 {
+.itrabajos2 {
+    grid-area: itrabajos2;
+    background-color: #383aad73;
+}
+.itrabajos3 {
+    grid-area: itrabajos3;
     background-color: #37df9c73;
 }
-.trabajos3 {
-    background-color: #37df9c73;
-}
-.trabajos4 {
-    background-color: #37df9c73;
+.itrabajos4 {
+    grid-area: itrabajos4;
+    background-color: #c037df73;
 }
 
 /* CSS FOOTER */
