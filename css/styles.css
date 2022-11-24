@@ -63,15 +63,7 @@ body {
         "footer        ";
 } */
 
-/* MEDIAS QUERIS INDEX */
 
-@media screen and (max-width: 948px){
-
-    .header {
-        background-color: rgb(0, 0, 0);
-        }
-
-}
 
 
 
@@ -145,48 +137,57 @@ ul {
 /* CSS MAIN */
 
 .main {
-    background-color: #aee89d;
+    background-color: #099488;
     grid-area: main;
 }
 
-.img-card-h-main1 {
+
+.card-h-img-main1 {
     grid-area: main1;
-    border: rgb(255, 0, 187) solid 2rem;
+    background-color: #aee89d;
     width: 100%;
-    min-width: 50%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.card-h-img-main4 {
+    grid-area: main4;
+    background-color: #aee89d;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.card-h-img-main5 {
+    grid-area: main5;
+    background-color: #aee89d;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+
+.img-card-h {
+    width: 75vh;
 }
 
 .card-h-text-main2 {
     grid-area: main2;
     background-color: rgb(140, 227, 53);
-    border: rgb(16, 132, 6) solid 2rem;
-}
-
-.img-card-h-main4 {
-    grid-area: main4;
-    width: 100%;
-    min-width: 50%;
-    border: rgb(71, 6, 132) solid 2rem;
+    /* border: rgb(16, 132, 6) solid 2rem; */
 }
 
 .card-h-text-main3 {
     grid-area: main3;
     background-color: rgb(228, 114, 32);
-    border: rgb(140, 43, 200) solid 2rem;
-}
-
-.img-card-h-main5 {
-    grid-area: main5;
-    width: 100%;
-    min-width: 50%;
-    border: rgb(200, 43, 80) solid 2rem;
-
+    /* border: rgb(140, 43, 200) solid 2rem; */
 }
 
 .card-h-text-main6 {
     grid-area: main6;
     background-color: rgb(140, 227, 53);
-    border: rgb(111, 87, 8) solid 2rem;
+    /* border: rgb(111, 87, 8) solid 2rem; */
 }
 
 /* CSS INDEX-TRABAJOS */
@@ -203,6 +204,8 @@ ul {
 .card-v-img {
     margin: 10px;
     min-width: 100px;
+    width: 20vw;
+
 
 }
 
@@ -311,12 +314,12 @@ h2 {
 
 h3 {
     font-size: 2rem;
-    margin: 1.5rem 0rem 1.5rem 0rem;
+    margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h4 {
     font-size: 1.8rem;
-    margin: 1.5rem 0rem 1.5rem 0rem;
+    margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h5 {
@@ -329,9 +332,8 @@ h5 {
 p {
     font-size: 1.3rem;
     color: rgb(16, 24, 255);
-    font-weight: 600;
     line-height: 1.2;
-    margin: 1.5rem 0rem 1.5rem 0rem;
+    margin: 1.5rem 0rem 0rem 0rem;
 }
 
 
@@ -383,4 +385,53 @@ label {
     background-color: aqua;
 }
 
+/* MEDIAS QUERIS INDEX */
 
+@media screen and (max-width: 948px) {
+
+    body {
+        background-color: rgb(31, 151, 31);
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: .25rem 0rem .25rem 0rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        color: blanchedalmond;
+        padding: 0rem 0rem 0rem 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        color: blanchedalmond;
+        padding: 1rem 0rem 1rem 0rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .card-v-img {
+        margin: 10px;
+        min-width: 100px;
+        width: 30vw;
+
+
+
+}
