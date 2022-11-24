@@ -225,9 +225,10 @@ ul {
 }
 
 .footer__contendor {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding: 2rem 6rem 0rem 6rem;
 }
 
