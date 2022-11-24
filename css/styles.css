@@ -236,8 +236,18 @@ ul {
     flex-direction: column;
 }
 
+.footer__cajaizq {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    text-align: center;
+    justify-content: center;
+}
+
 .footer__logo {
-    width: 15rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .footer__derechos {
