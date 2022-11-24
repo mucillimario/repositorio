@@ -234,15 +234,9 @@ ul {
 .footer__caja {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-.footer__cajaizq {
-    display: flex;
-    flex-direction: column;
     width: 340px;
     text-align: center;
-    justify-content: center;
+
 }
 
 .footer__logo {
