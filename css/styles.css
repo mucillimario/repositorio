@@ -234,6 +234,7 @@ ul {
 .footer__caja {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .footer__cajaizq {
@@ -246,8 +247,9 @@ ul {
 
 .footer__logo {
     width: 50%;
-    display: flex;
-    justify-content: center;
+    display: flex; 
+    align-self:center;
+
 }
 
 .footer__derechos {
