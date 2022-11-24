@@ -27,7 +27,7 @@ body {
     font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px 50px auto auto auto auto auto auto 300px;
+    grid-template-rows: 150px 50px auto auto auto auto auto auto 350px;
     grid-template-areas:
         "header        header"
         "nav           nav"
@@ -39,32 +39,6 @@ body {
         "trabajos     trabajos"
         "footer        footer";
 }
-
-/* .grid-contenedor {
-    width: 90%;
-    margin: 0 auto;
-    background-color: rgb(159, 84, 84);
-    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 150px 50px auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas:
-        "header        "
-        "nav     "
-        "carrusel    "
-        "main          "
-        "main1        "
-        "main2        "
-        "main3         "
-        "main4"
-        "main5"
-        "main6"
-        "trabajos     "
-        "footer        ";
-} */
-
-
-
 
 
 /* CSS HEADER */
@@ -221,7 +195,9 @@ ul {
 .footer {
     grid-area: footer;
     background-color: rgb(104, 96, 96);
-    padding: 2rem 2rem 2rem 2 rem;
+
+
+
 }
 
 .footer__contendor {
@@ -392,7 +368,7 @@ label {
     background-color: aqua;
 }
 
-/* MEDIAS QUERIS INDEX */
+/* MEDIAS QUERIS INDEX - Tamaño L*/
 
 @media screen and (max-width: 948px) {
 
@@ -438,7 +414,84 @@ label {
         margin: 10px;
         min-width: 100px;
         width: 30vw;
+    }
 
+}
+
+/* MEDIAS QUERIS INDEX - Tamaño M*/
+
+@media screen and (max-width: 730px) {
+
+    .grid-contenedor {
+        width: 90%;
+        margin: 0 auto;
+        font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 150px 75px auto auto auto auto auto auto 650px;
+        grid-template-areas:
+            "header        header"
+            "nav           nav"
+            "carrusel      carrusel"
+            "main           main"
+            "main1         main2"
+            "main3         main4"
+            "main5         main6"
+            "trabajos     trabajos"
+            "footer        footer";
+    }
+
+
+    body {
+        background-color: rgb(169, 203, 30);
+    }
+
+
+    .nav-li {
+        height: 160%;
+    }
+
+
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: .25rem 0rem .25rem 0rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        color: blanchedalmond;
+        padding: 0rem 0rem 0rem 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        color: blanchedalmond;
+        padding: 1rem 0rem 1rem 0rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .card-v-img {
+        margin: 10px;
+        min-width: 100px;
+        width: 30vw;
+    }
 
 
 }
