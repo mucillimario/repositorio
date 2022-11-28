@@ -27,7 +27,7 @@ body {
     font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 150px 50px auto auto auto auto auto auto 350px;
+    grid-template-rows: auto 50px auto auto auto auto auto auto auto;
     grid-template-areas:
         "header        header"
         "nav           nav"
@@ -44,7 +44,7 @@ body {
 /* CSS HEADER */
 .header {
     grid-area: header;
-    background-color: rgb(221, 207, 13);
+    background-color: rgb(24, 202, 131);
     display: flex;
     justify-content: center;
     padding-top: 1rem;
@@ -144,7 +144,7 @@ ul {
     display: flex;
     justify-content: center;
 
-    
+
 }
 
 .card-h-img-main4 {
@@ -152,7 +152,7 @@ ul {
     background-color: #aee89d;
     width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .card-h-img-main5 {
@@ -160,17 +160,16 @@ ul {
     background-color: #aee89d;
     width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .img-card-h {
-    width: 75vh;
+    object-fit: contain;
 }
 
 .card-h-text-main2 {
     grid-area: main2;
-    background-color: rgb(140, 227, 53);
-    /* border: rgb(16, 132, 6) solid 2rem; */
+    background-color: rgb(215, 212, 226);
 }
 
 .card-h-text-main3 {
@@ -184,6 +183,7 @@ ul {
     background-color: rgb(140, 227, 53);
     /* border: rgb(111, 87, 8) solid 2rem; */
 }
+
 
 /* CSS INDEX-TRABAJOS */
 .tiradetrabajos {
@@ -208,20 +208,15 @@ ul {
 
 }
 
-.imgtrabajosgrande{ 
+.imgtrabajosgrande {
     display: none;
 }
 
-
-
-/* CSS FOOTER */
+/* CSS INDEX-FOOTER */
 
 .footer {
     grid-area: footer;
     background-color: rgb(104, 96, 96);
-
-
-
 }
 
 .footer__contendor {
@@ -242,8 +237,8 @@ ul {
 
 .footer__logo {
     width: 50%;
-    display: flex; 
-    align-self:center;
+    display: flex;
+    align-self: center;
 
 }
 
@@ -252,57 +247,34 @@ ul {
     padding: 1rem;
 }
 
-footer p {
+.footer__caja li {
     color: antiquewhite;
-    font-size: 1.3rem;
+    list-style-type: none;
 }
 
-footer a {
+.footer__caja h5 {
+    font-size: 1.8rem;
     color: antiquewhite;
-    font-size: 1.3rem;
+    line-height: 1.28;
+
+}
+
+.footer__caja p {
+    font-size: 1rem;
+    color: antiquewhite;
+    line-height: 1.28;
+}
+
+.footer__caja a {
+    color: antiquewhite;
     text-decoration: none;
 }
 
 .footer__derechos p {
+    font-size: 1rem;
     color: antiquewhite;
-    font-size: 1.3rem;
-
+    line-height: 1.28;
 }
-
-.footer__caja li {
-    color: antiquewhite;
-    font-size: 1.3rem;
-    list-style-type: none;
-}
-
-
-
-
-
-
-
-
-
-/* ORDENAR ORDENAR ORDENAR ORDENARORDENAR ORDENAR ORDENAR ORDENARORDENAR ORDENAR ORDENAR ORDENAR */
-
-
-/* CSS DEL FORMS */
-
-.form-input {
-    margin: 10px;
-    display: flex;
-    width: 100%;
-
-}
-
-.form-textarea {
-    margin: 10px;
-    display: flex;
-    width: 100%;
-    height: 10rem;
-
-}
-
 
 /* Estilos de textos   */
 
@@ -314,89 +286,55 @@ h1 {
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: blanchedalmond;
     padding: 0rem 0rem 0rem 1.5rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    color: coral;
     margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h4 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h5 {
-    font-size: 1.5rem;
-    color: blanchedalmond;
+    font-size: 1.3rem;
+    color: rgb(84, 54, 11);
     padding: 1.5rem 0rem 1.5rem 0rem;
 
 }
 
 p {
-    font-size: 1.3rem;
-    color: rgb(16, 24, 255);
-    line-height: 1.2;
-    margin: 1.5rem 0rem 0rem 0rem;
+    font-size: 1rem;
+    color: rgb(84, 54, 11);
+    padding: 1.5rem 0rem 1.5rem 0rem;
+
+}
+
+.tiradetrabajos h3 {
+    color: darkgreen;
+}
+
+.textoderecha {
+    text-align: right;
 }
 
 
-/* Pages CONTACTO */
+/* MEDIA QUERIES */
 
-.section-contacto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.section-contacto h2 {
-    padding: 1.5rem 0rem 1.5rem 1.5rem;
-}
-
-.mapa {
-    background-color: #032a64;
-    padding: 1rem 6rem 2rem 6rem;
-}
-
-
-.formulario {
-    background-color: #444;
-    padding: 1rem 6rem 2rem 6rem;
-}
-
-.formulario p {
-    color: blanchedalmond;
-}
-
-.section-contacto h2 {
-    padding-left: 0rem;
-}
-
-label {
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-}
-
-.boton {
-
-    background-color: #b5b5b5;
-    padding: 0.5rem 2.5rem;
-    border-radius: 1rem;
-}
-
-
-.boton:hover {
-    background-color: aqua;
-}
-
-#prueba{display:none}
 
 /* MEDIAS QUERIS INDEX - Tamaño L*/
 
 @media screen and (max-width: 510px) {
+
+    body {
+        background-color: aqua;
+    }
 
     .nav {
         grid-area: nav;
@@ -404,7 +342,7 @@ label {
         display: flex;
         align-content: center;
         justify-content: center;
-    
+
     }
 
     h1 {
@@ -444,19 +382,20 @@ label {
     .card-v-img {
         margin: 10px;
         min-width: 45%;
-        width: 30vw;}
+        width: 30vw;
+    }
 
 
-        .imgtrabajosgrande {
-        display: none;}
-
-
+    .imgtrabajosgrande {
+        display: none;
+    }
 
 }
 
+
 /* MEDIAS QUERIS INDEX - Tamaño S*/
 
- @media screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
 
     .grid-contenedor {
         grid-template-columns: repeat(1fr);
@@ -470,68 +409,75 @@ label {
             "footer";
     }
 
+    body {
+        background-color: darkmagenta;
+    }
+
     .nav {
         grid-area: nav;
         background-color: rgb(227, 93, 9);
         display: flex;
         align-content: center;
         justify-content: center;
-    
+
     }
 
     .carrusel {
         grid-area: carrusel;
     }
-    
+
     .main {
-        background-color: #099488;
+        background-color: #0a675f;
         grid-area: main;
     }
-    
-    
+
     .card-h-img-main1 {
         grid-area: main;
         background-color: #aee89d;
         width: 100%;
         display: flex;
         justify-content: center;
-    
-        
     }
-    
+ 
     .card-h-img-main4 {
         grid-area: main;
         background-color: #aee89d;
         width: 100%;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
-    
+ 
     .card-h-img-main5 {
         grid-area: main;
         background-color: #aee89d;
         width: 100%;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
-    
+ 
     .img-card-h {
         width: 75vh;
-        
+ 
     }
-    
+ 
     .card-h-text-main2 {
         grid-area: main;
         background-color: rgb(140, 227, 53);
-        /* border: rgb(16, 132, 6) solid 2rem; */
+        display: grid;
+        width: 100%;
+        align-content: space-around;
+        height: 100%;
     }
-    
+ 
     .card-h-text-main3 {
         grid-area: main;
-        background-color: rgb(228, 114, 32);
-        /* border: rgb(140, 43, 200) solid 2rem; */
+        background-color: rgb(140, 227, 53);
+        display: grid;
+        width: 100%;
+        align-content: space-around;
+        height: 100%;
     }
-    
+ 
     .card-h-text-main6 {
         grid-area: main;
         background-color: rgb(140, 227, 53);
@@ -539,64 +485,38 @@ label {
     }
 
 
+
+
+
+    }
+
+}
+
+
+
     .tiradetrabajos {
         grid-area: trabajos;
     }
-    
+
     .trabajos {
         width: 100%;
         background-color: #aee89d;
     }
 
-.card-v-img {
-    min-width: 100%;
-padding: 10px;
-}
+    .card-v-img {
+        min-width: 100%;
+        padding: 10px;
+    }
 
 
-.imgtrabajosgrande {
-    display: none;}
+    .imgtrabajosgrande {
+        display: none;
+    }
 
 
     .footer {
         grid-area: footer;
         background-color: rgb(104, 96, 96);
-    }
-    
-
-
-    h1 {
-        font-size: 1.8rem;
-        text-align: center;
-        margin: .25rem 0rem .25rem 0rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-        color: blanchedalmond;
-        padding: 0rem 0rem 0rem 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        margin: 1rem 0rem 0rem 0rem;
-    }
-
-    h4 {
-        font-size: 1.3rem;
-        margin: 1rem 0rem 1rem 0rem;
-    }
-
-    h5 {
-        font-size: 1.5rem;
-        color: blanchedalmond;
-        padding: 1rem 0rem 1rem 0rem;
-
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.2;
     }
 
 }
