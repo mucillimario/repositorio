@@ -22,7 +22,7 @@ body {
 }
 
 .grid-contenedor {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
@@ -59,10 +59,31 @@ body {
 }
 
 /* CSS NAV */
+/* 
+.index__bg-nav {
+    background-image: radial-gradient(#a6d3eb, #a6d3eb);
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    }
+
+    .nav-link {
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+    }
+     */
+
 
 .nav {
     grid-area: nav;
-    background-color: rgb(72, 111, 145);
+    background-color: rgb(234, 234, 38);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -368,12 +389,19 @@ label {
     background-color: aqua;
 }
 
+#prueba{display:none}
+
 /* MEDIAS QUERIS INDEX - Tamaño L*/
 
-@media screen and (max-width: 948px) {
+@media screen and (max-width: 510px) {
 
-    body {
-        background-color: rgb(31, 151, 31);
+    .nav {
+        grid-area: nav;
+        background-color: rgb(158, 69, 190);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    
     }
 
     h1 {
@@ -414,37 +442,130 @@ label {
         margin: 10px;
         min-width: 100px;
         width: 30vw;
-    }
+    } */
 
 }
 
-/* MEDIAS QUERIS INDEX - Tamaño M*/
+/* MEDIAS QUERIS INDEX - Tamaño S*/
 
-@media screen and (max-width: 730px) {
+ @media screen and (max-width: 360px) {
 
     .grid-contenedor {
-        width: 90%;
-        margin: 0 auto;
-        font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 150px 75px auto auto auto auto auto auto 650px;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: 150px 75px auto auto auto 650px;
         grid-template-areas:
-            "header        header"
-            "nav           nav"
-            "carrusel      carrusel"
-            "main           main"
-            "main1         main2"
-            "main3         main4"
-            "main5         main6"
-            "trabajos     trabajos"
-            "footer        footer";
+            "header"
+            "nav"
+            "carrusel"
+            "main"
+            "trabajos"
+            "footer";
     }
 
-
-    body {
-        background-color: rgb(169, 203, 30);
+    .nav {
+        grid-area: nav;
+        background-color: rgb(227, 93, 9);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    
     }
+
+    .carrusel {
+        grid-area: carrusel;
+    }
+    
+    .main {
+        background-color: #099488;
+        grid-area: main;
+    }
+    
+    
+    .card-h-img-main1 {
+        grid-area: main;
+        background-color: #aee89d;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    
+        
+    }
+    
+    .card-h-img-main4 {
+        grid-area: main;
+        background-color: #aee89d;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .card-h-img-main5 {
+        grid-area: main;
+        background-color: #aee89d;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .img-card-h {
+        width: 75vh;
+    }
+    
+    .card-h-text-main2 {
+        grid-area: main;
+        background-color: rgb(140, 227, 53);
+        /* border: rgb(16, 132, 6) solid 2rem; */
+    }
+    
+    .card-h-text-main3 {
+        grid-area: main;
+        background-color: rgb(228, 114, 32);
+        /* border: rgb(140, 43, 200) solid 2rem; */
+    }
+    
+    .card-h-text-main6 {
+        grid-area: main;
+        background-color: rgb(140, 227, 53);
+        /* border: rgb(111, 87, 8) solid 2rem; */
+    }
+
+    .trabajos {
+        grid-area: trabajos;
+
+        width: 100%;
+
+        background-color: #aee89d;
+    }
+
+.card-v-img {
+
+    min-width: 100%;
+
+
+}
+
+.tiradetrabajos {
+    grid-area: trabajos;
+    /* display: flex;
+    flex-wrap: wrap; */
+
+}
+
+
+
+
+
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: rgb(104, 96, 96);
+    
+    
+
+
+
+
 
 
     .nav-li {
@@ -493,5 +614,7 @@ label {
         width: 30vw;
     }
 
+    #imgtrabajogrande {
+        display: none;}    
 
 }
