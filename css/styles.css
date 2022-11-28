@@ -18,7 +18,7 @@ img {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #222;
+    background-color: rgb(201, 102, 102);
 }
 
 .grid-contenedor {
@@ -186,9 +186,14 @@ ul {
 }
 
 /* CSS INDEX-TRABAJOS */
+.tiradetrabajos {
+    grid-area: trabajos;
+    display: flex;
+    flex-wrap: wrap;
+
+}
 
 .trabajos {
-    grid-area: trabajos;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -201,15 +206,13 @@ ul {
     min-width: 100px;
     width: 20vw;
 
-
 }
 
-.tiradetrabajos {
-    grid-area: trabajos;
-    display: flex;
-    flex-wrap: wrap;
-
+.imgtrabajosgrande{ 
+    display: none;
 }
+
+
 
 /* CSS FOOTER */
 
@@ -440,9 +443,14 @@ label {
 
     .card-v-img {
         margin: 10px;
-        min-width: 100px;
-        width: 30vw;
-    } */
+        min-width: 45%;
+        width: 30vw;}
+
+
+        .imgtrabajosgrande {
+        display: none;}
+
+
 
 }
 
@@ -509,6 +517,7 @@ label {
     
     .img-card-h {
         width: 75vh;
+        
     }
     
     .card-h-text-main2 {
@@ -529,49 +538,31 @@ label {
         /* border: rgb(111, 87, 8) solid 2rem; */
     }
 
-    .trabajos {
+
+    .tiradetrabajos {
         grid-area: trabajos;
-
+    }
+    
+    .trabajos {
         width: 100%;
-
         background-color: #aee89d;
     }
 
 .card-v-img {
-
     min-width: 100%;
-
-
-}
-
-.tiradetrabajos {
-    grid-area: trabajos;
-    /* display: flex;
-    flex-wrap: wrap; */
-
+padding: 10px;
 }
 
 
+.imgtrabajosgrande {
+    display: none;}
 
-
-
-    }
 
     .footer {
         grid-area: footer;
         background-color: rgb(104, 96, 96);
-    
-    
-
-
-
-
-
-
-    .nav-li {
-        height: 160%;
     }
-
+    
 
 
     h1 {
@@ -607,14 +598,5 @@ label {
         font-size: 1rem;
         line-height: 1.2;
     }
-
-    .card-v-img {
-        margin: 10px;
-        min-width: 100px;
-        width: 30vw;
-    }
-
-    #imgtrabajogrande {
-        display: none;}    
 
 }
