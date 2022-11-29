@@ -195,14 +195,17 @@ ul {
     justify-content: space-around;
 }
 
-.card-v-img{
+.card-v-img {
     width: 23%;
 
 }
 
-
 .imgtrabajosmobile {
     display: none;
+}
+
+.imgtrabajosgrande {
+    display: flex;
 }
 
 
@@ -233,7 +236,7 @@ ul {
     width: 60%;
     display: flex;
     align-self: center;
-    
+
 }
 
 .footer__derechos {
@@ -376,16 +379,16 @@ p {
     .card-v-img {
         margin: 1%;
         min-width: 100%;
-        
+
 
     }
 
 
     .imgtrabajosmobile {
-        display:flex;
+        display: flex;
     }
 
-    .imgtrabajosgrande{
+    .imgtrabajosgrande {
         display: none;
     }
 }
@@ -397,7 +400,7 @@ p {
 
     .grid-contenedor {
         grid-template-columns: repeat(1fr);
-        grid-template-rows: 150px 75px auto auto auto auto 650px;
+        grid-template-rows: auto auto auto auto auto auto auto;
         grid-template-areas:
             "header"
             "nav"
@@ -409,7 +412,7 @@ p {
     }
 
     body {
-        background-color: darkmagenta;
+        background-color: rgb(220, 223, 188);
     }
 
     .nav {
@@ -430,49 +433,42 @@ p {
         grid-area: main;
     }
 
-    .card-h-img-main1 {
-        grid-area: main1;
-
-
+    .main1 {
+        background-color: bisque;
     }
- 
-    .card-h-img-main4 {
+
+    /* .card-h-img-main1 {
+        grid-area: main1; */
+
+    /* .card-h-img-main4 {
         grid-area: main1;
-
-
     }
- 
+
+     */
+    /*  
     .card-h-img-main5 {
         grid-area: main1;
 
-    }
- 
+    } */
+    /*  
     .img-card-h {
         width: 50%;
-    }
- 
-.card-h-text-main2 {
+    } */
+
+    /* .card-h-text-main2 {
         grid-area: main1;
-    }
- 
-    .card-h-text-main3 {
+    } */
+
+    /* .card-h-text-main3 {
         grid-area: main1;
-    }
- 
-    .card-h-text-main6 {
+    } */
+
+    /* .card-h-text-main6 {
         grid-area: main1;
 
-    }
+    } */
 
 
-
-
-
-    }
-
-    /* .imgtrabajosmobile {
-        display: none;
-        flex-wrap: wrap; */
 
 
 
@@ -490,5 +486,7 @@ p {
         grid-area: footer;
         background-color: rgb(104, 96, 96);
     }
+
+
 
 }
