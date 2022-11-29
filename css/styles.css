@@ -181,11 +181,11 @@ ul {
 
 
 /* CSS INDEX-TRABAJOS */
+
 .tiradetrabajos {
     grid-area: trabajos;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .trabajos {
@@ -193,16 +193,13 @@ ul {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-around;
-
 }
 
 .card-v-img{
     width: 23%;
 
 }
-.imgtrabajosgrande {
-    display: flex;
-}
+
 
 .imgtrabajosmobile {
     display: none;
@@ -378,7 +375,8 @@ p {
 
     .card-v-img {
         margin: 1%;
-        min-width: 45%;
+        min-width: 100%;
+        
 
     }
 
@@ -472,9 +470,9 @@ p {
 
     }
 
-    .imgtrabajosmobile {
-        display: flex;
-        flex-wrap: wrap;
+    /* .imgtrabajosmobile {
+        display: none;
+        flex-wrap: wrap; */
 
 
 
