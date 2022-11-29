@@ -136,6 +136,9 @@ ul {
     grid-area: main;
 }
 
+.main_MQ_Mobile{
+    display: none;
+}
 
 .card-h-img-main1 {
     grid-area: main1;
@@ -422,20 +425,22 @@ p {
         align-content: center;
         justify-content: center;
 
+
     }
 
     .carrusel {
         grid-area: carrusel;
     }
 
-    .main {
+    /* .main {
         background-color: #0a675f;
         grid-area: main;
     }
 
-    .main1 {
-        background-color: bisque;
-    }
+
+    .main_MQ_Mobile{
+        grid-area: main1;
+    } */
 
     /* .card-h-img-main1 {
         grid-area: main1; */
