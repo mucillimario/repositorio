@@ -169,19 +169,14 @@ ul {
 
 .card-h-text-main2 {
     grid-area: main2;
-    background-color: rgb(215, 212, 226);
 }
 
 .card-h-text-main3 {
     grid-area: main3;
-    background-color: rgb(228, 114, 32);
-    /* border: rgb(140, 43, 200) solid 2rem; */
 }
 
 .card-h-text-main6 {
     grid-area: main6;
-    background-color: rgb(140, 227, 53);
-    /* border: rgb(111, 87, 8) solid 2rem; */
 }
 
 
@@ -201,16 +196,18 @@ ul {
 
 }
 
-.card-v-img {
-    margin: 10px;
-    min-width: 100px;
-    width: 20vw;
+.card-v-img{
+    width: 23%;
 
 }
-
 .imgtrabajosgrande {
+    display: flex;
+}
+
+.imgtrabajosmobile {
     display: none;
 }
+
 
 /* CSS INDEX-FOOTER */
 
@@ -224,22 +221,22 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 2rem 6rem 0rem 6rem;
+    padding: 2rem 1rem 0rem 1rem;
 }
 
 .footer__caja {
     display: flex;
     flex-direction: column;
-    width: 340px;
+    width: 33%;
     text-align: center;
-
+    align-items: center;
 }
 
 .footer__logo {
-    width: 50%;
+    width: 60%;
     display: flex;
     align-self: center;
-
+    
 }
 
 .footer__derechos {
@@ -380,16 +377,19 @@ p {
     }
 
     .card-v-img {
-        margin: 10px;
+        margin: 1%;
         min-width: 45%;
-        width: 30vw;
+
     }
 
 
-    .imgtrabajosgrande {
+    .imgtrabajosmobile {
+        display:flex;
+    }
+
+    .imgtrabajosgrande{
         display: none;
     }
-
 }
 
 
@@ -399,12 +399,13 @@ p {
 
     .grid-contenedor {
         grid-template-columns: repeat(1fr);
-        grid-template-rows: 150px 75px auto auto auto 650px;
+        grid-template-rows: 150px 75px auto auto auto auto 650px;
         grid-template-areas:
             "header"
             "nav"
             "carrusel"
             "main"
+            "main1"
             "trabajos"
             "footer";
     }
@@ -432,65 +433,48 @@ p {
     }
 
     .card-h-img-main1 {
-        grid-area: main;
-        background-color: #aee89d;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        grid-area: main1;
+
+
     }
  
     .card-h-img-main4 {
-        grid-area: main;
-        background-color: #aee89d;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        grid-area: main1;
+
+
     }
  
     .card-h-img-main5 {
-        grid-area: main;
-        background-color: #aee89d;
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        grid-area: main1;
+
     }
  
     .img-card-h {
-        width: 75vh;
- 
+        width: 50%;
     }
  
-    .card-h-text-main2 {
-        grid-area: main;
-        background-color: rgb(140, 227, 53);
-        display: grid;
-        width: 100%;
-        align-content: space-around;
-        height: 100%;
+.card-h-text-main2 {
+        grid-area: main1;
     }
  
     .card-h-text-main3 {
-        grid-area: main;
-        background-color: rgb(140, 227, 53);
-        display: grid;
-        width: 100%;
-        align-content: space-around;
-        height: 100%;
+        grid-area: main1;
     }
  
     .card-h-text-main6 {
-        grid-area: main;
-        background-color: rgb(140, 227, 53);
-        /* border: rgb(111, 87, 8) solid 2rem; */
-    }
-
-
-
-
+        grid-area: main1;
 
     }
 
-}
+
+
+
+
+    }
+
+    .imgtrabajosmobile {
+        display: flex;
+        flex-wrap: wrap;
 
 
 
@@ -501,16 +485,6 @@ p {
     .trabajos {
         width: 100%;
         background-color: #aee89d;
-    }
-
-    .card-v-img {
-        min-width: 100%;
-        padding: 10px;
-    }
-
-
-    .imgtrabajosgrande {
-        display: none;
     }
 
 
