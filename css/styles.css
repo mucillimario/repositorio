@@ -399,20 +399,25 @@ p {
 @media screen and (max-width: 360px) {
 
     .grid-contenedor {
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
         grid-template-areas:
             "header"
             "nav"
             "carrusel"
             "main"
             "main1"
+            "main2"
+            "main4"
+            "main3"
+            "main5"
+            "main6"
             "trabajos"
             "footer";
     }
 
     body {
-        background-color: rgb(220, 223, 188);
+        background-color: rgb(200, 200, 200);
     }
 
     .nav {
@@ -433,45 +438,6 @@ p {
         grid-area: main;
     }
 
-    .main1 {
-        background-color: bisque;
-    }
-
-    /* .card-h-img-main1 {
-        grid-area: main1; */
-
-    /* .card-h-img-main4 {
-        grid-area: main1;
-    }
-
-     */
-    /*  
-    .card-h-img-main5 {
-        grid-area: main1;
-
-    } */
-    /*  
-    .img-card-h {
-        width: 50%;
-    } */
-
-    /* .card-h-text-main2 {
-        grid-area: main1;
-    } */
-
-    /* .card-h-text-main3 {
-        grid-area: main1;
-    } */
-
-    /* .card-h-text-main6 {
-        grid-area: main1;
-
-    } */
-
-
-
-
-
     .tiradetrabajos {
         grid-area: trabajos;
     }
@@ -487,6 +453,8 @@ p {
         background-color: rgb(104, 96, 96);
     }
 
-
+    .textoderecha {
+        text-align: left;
+    }
 
 }
