@@ -52,13 +52,14 @@
 .card-h-img-main5 {
     grid-area: main5;
     background-color: #aee89d;
-    width: 100%;
+    width: 400%;
     display: flex;
     justify-content: center;
 }
 
-.img-card-h {
+.img-card-h img{
     object-fit: contain;
+
 }
 
 .card-h-text-main2 {

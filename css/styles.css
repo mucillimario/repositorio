@@ -252,12 +252,12 @@ p {
 .card-h-img-main5 {
   grid-area: main5;
   background-color: #aee89d;
-  width: 100%;
+  width: 400%;
   display: flex;
   justify-content: center;
 }
 
-.img-card-h {
+.img-card-h img {
   object-fit: contain;
 }
 
@@ -612,7 +612,6 @@ label {
     line-height: 1.2;
   }
   .card-v-img {
-    margin: 1%;
     min-width: 100%;
   }
   .imgtrabajosmobile {
