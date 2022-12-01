@@ -1,0 +1,49 @@
+// Css de page Materiales
+
+.grid-contenedor-materiales {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto 40px auto auto auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "materiales"
+        "footer";
+}
+
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.materiales_materiales {
+    grid-area: materiales;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+.card-verticarl-materiales{
+    width: 225px;
+    padding: 1%;
+    
+
+}

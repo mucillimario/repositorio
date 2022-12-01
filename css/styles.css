@@ -1,61 +1,48 @@
-/* Mario Mucilli - Codigo :)
-
+@charset "UTF-8";
 /* 1 rem = 10 px */
-
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 /* Reseteo de espacios a los lados y hacia adentro de las cajas*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(201, 102, 102);
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(223, 203, 203);
 }
-
-.grid-contenedor {
-    width: 95%;
-    margin: 0 auto;
-    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 50px auto auto auto auto auto auto auto;
-    grid-template-areas:
-        "header        header"
-        "nav           nav"
-        "carrusel      carrusel"
-        "main           main"
-        "main1         main2"
-        "main3         main4"
-        "main5         main6"
-        "trabajos     trabajos"
-        "footer        footer";
-}
-
 
 /* CSS HEADER */
 .header {
-    grid-area: header;
-    background-color: rgb(24, 202, 131);
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  grid-area: header;
+  background-color: rgb(236, 225, 8);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.header_logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .header__img-logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 75%;
+}
 
+.header a {
+  display: flex;
+  justify-content: center;
 }
 
 /* CSS NAV */
@@ -79,382 +66,808 @@ body {
 
     }
      */
-
-
 .nav {
-    grid-area: nav;
-    background-color: rgb(234, 234, 38);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
+  grid-area: nav;
+  background-color: #cbcb1c;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 ul {
-    display: flex;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-li {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-around;
-    list-style-type: none;
-    font-weight: 400;
-    margin-bottom: 0px;
-    padding-left: 0px;
-    width: 80%;
-    height: 100%;
-
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  list-style-type: none;
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  width: 80%;
+  height: 100%;
 }
 
 .nav-li a {
-    color: rgb(15, 191, 38);
-    font-size: 1.3rem;
-    text-decoration: none;
-    background-color: #1b2105;
-    padding: .5rem 1rem .5rem 1rem;
-    border-radius: .5rem;
+  color: rgb(19, 13, 128);
+  font-size: 1.3rem;
+  text-decoration: none;
+  /* background-color: #95a06d; */
+  /* padding: .5rem .5rem .5rem .5rem;
+  border-radius: .5rem; */
 }
 
 .nav-li a:hover {
-    background-color: rgb(129, 121, 1);
-    color: rgb(24, 4, 4);
+  font-weight: 600;
+  color: rgb(4, 7, 57);
+  text-decoration-line: underline;
 }
-
-/* CSS CARRUSEL */
-
-.carrusel {
-    grid-area: carrusel;
-}
-
-/* CSS MAIN */
-
-.main {
-    background-color: #099488;
-    grid-area: main;
-}
-
-
-.card-h-img-main1 {
-    grid-area: main1;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.card-h-img-main4 {
-    grid-area: main4;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.card-h-img-main5 {
-    grid-area: main5;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.img-card-h {
-    object-fit: contain;
-}
-
-.card-h-text-main2 {
-    grid-area: main2;
-}
-
-.card-h-text-main3 {
-    grid-area: main3;
-}
-
-.card-h-text-main6 {
-    grid-area: main6;
-}
-
-
-/* CSS INDEX-TRABAJOS */
-
-.tiradetrabajos {
-    grid-area: trabajos;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.trabajos {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-around;
-}
-
-.card-v-img {
-    width: 23%;
-
-}
-
-.imgtrabajosmobile {
-    display: none;
-}
-
-.imgtrabajosgrande {
-    display: flex;
-}
-
 
 /* CSS INDEX-FOOTER */
-
 .footer {
-    grid-area: footer;
-    background-color: rgb(104, 96, 96);
+  grid-area: footer;
+  background-color: rgb(25, 25, 25);
 }
 
 .footer__contendor {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2rem 1rem 0rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 1rem 0rem 1rem;
 }
 
 .footer__caja {
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-    text-align: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: center;
+  align-items: center;
 }
 
 .footer__logo {
-    width: 60%;
-    display: flex;
-    align-self: center;
-
+  width: 100px;
+  display: flex;
+  align-self: center;
 }
 
 .footer__derechos {
-    text-align: center;
-    padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .footer__caja li {
-    color: antiquewhite;
-    list-style-type: none;
+  color: antiquewhite;
+  list-style-type: none;
 }
 
 .footer__caja h5 {
-    font-size: 1.8rem;
-    color: antiquewhite;
-    line-height: 1.28;
-
+  font-size: 1.8rem;
+  color: antiquewhite;
+  line-height: 1.28;
 }
 
 .footer__caja p {
-    font-size: 1rem;
-    color: antiquewhite;
-    line-height: 1.28;
+  font-size: 1rem;
+  color: antiquewhite;
+  line-height: 1.28;
 }
 
 .footer__caja a {
-    color: antiquewhite;
-    text-decoration: none;
+  color: antiquewhite;
+  text-decoration: none;
 }
 
 .footer__derechos p {
-    font-size: 1rem;
-    color: antiquewhite;
-    line-height: 1.28;
+  font-size: 1rem;
+  color: antiquewhite;
+  line-height: 1.28;
 }
 
 /* Estilos de textos   */
-
 h1 {
-    font-size: 2.5rem;
-    color: rgb(226, 134, 43);
-    text-align: center;
-    margin: .5rem 0rem .5rem 0rem;
+  font-size: 2.5rem;
+  color: rgb(226, 134, 43);
+  text-align: center;
+  margin: 0.5rem 0rem 0.5rem 0rem;
 }
 
 h2 {
-    font-size: 2rem;
-    color: blanchedalmond;
-    padding: 0rem 0rem 0rem 1.5rem;
+  font-size: 2rem;
+  color: blanchedalmond;
+  padding: 0rem 0rem 0rem 1.5rem;
 }
 
 h3 {
-    font-size: 1.8rem;
-    color: coral;
-    margin: 1.5rem 0rem 0rem 0rem;
+  font-size: 1.8rem;
+  color: coral;
+  margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h4 {
-    font-size: 1.5rem;
-    margin: 1.5rem 0rem 0rem 0rem;
+  font-size: 1.5rem;
+  margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h5 {
-    font-size: 1.3rem;
-    color: rgb(84, 54, 11);
-    padding: 1.5rem 0rem 1.5rem 0rem;
-
+  font-size: 1.3rem;
+  color: rgb(84, 54, 11);
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 p {
-    font-size: 1rem;
-    color: rgb(84, 54, 11);
-    padding: 1.5rem 0rem 1.5rem 0rem;
-
+  font-size: 1.2rem;
+  color: rgb(84, 54, 11);
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 .tiradetrabajos h3 {
-    color: darkgreen;
+  color: darkgreen;
 }
 
 .textoderecha {
-    text-align: right;
+  text-align: right;
 }
 
+.grid-contenedor {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 40px auto auto auto auto auto auto auto;
+  grid-template-areas: "header        header" "nav           nav" "carrusel      carrusel" "main           main" "main1         main2" "main3         main4" "main5         main6" "trabajos     trabajos" "footer        footer";
+}
 
-/* MEDIA QUERIES */
+/* CSS CARRUSEL */
+.carrusel {
+  grid-area: carrusel;
+}
 
+/* CSS MAIN */
+.main {
+  background-color: rgba(49, 196, 164, 0.5019607843);
+  grid-area: main;
+}
 
-/* MEDIAS QUERIS INDEX - Tamaño L*/
+.card-h-img-main1 {
+  grid-area: main1;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+.card-h-img-main4 {
+  grid-area: main4;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-h-img-main5 {
+  grid-area: main5;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-card-h {
+  object-fit: contain;
+}
+
+.card-h-text-main2 {
+  grid-area: main2;
+}
+
+.card-h-text-main3 {
+  grid-area: main3;
+}
+
+.card-h-text-main6 {
+  grid-area: main6;
+}
+
+/* CSS INDEX-TRABAJOS */
+.tiradetrabajos {
+  grid-area: trabajos;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(117, 198, 212);
+}
+
+.trabajos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+
+.card-v-img {
+  width: 23%;
+}
+
+.imgtrabajosmobile {
+  display: none;
+}
+
+.imgtrabajosgrande {
+  display: flex;
+}
+
+/* Pages CONTACTO */
+.section-contacto {
+  display: flex;
+  width: 100%;
+}
+
+.section-contacto h2 {
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
+}
+
+.formulario {
+  background-color: #444;
+  padding: 1rem 6rem 2rem 6rem;
+  width: 40%;
+}
+
+.formulario p {
+  color: blanchedalmond;
+}
+
+.section-contacto h2 {
+  padding-left: 0rem;
+}
+
+label {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+}
+
+.boton {
+  background-color: #b5b5b5;
+  padding: 0.5rem 2.5rem;
+  border-radius: 1rem;
+}
+
+.boton:hover {
+  background-color: aqua;
+}
+
+.form-input {
+  margin: 10px;
+  display: flex;
+  width: 100%;
+}
+
+.form-textarea {
+  margin: 10px;
+  display: flex;
+  width: 100%;
+  height: 10rem;
+}
+
+.mapa {
+  background-color: #032a64;
+  padding: 1rem 6rem 2rem 6rem;
+  width: 40%;
+}
+
+.grid-contenedor-equipos {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 40px auto auto auto auto auto auto auto;
+  grid-template-areas: "header        header" "nav           nav" "main           main" "main1         main2" "main3         main4" "main5         main6" "main7         main8" "footer        footer";
+}
+
+/* CSS MAIN */
+.main {
+  background-color: #099488;
+  grid-area: main;
+}
+
+.card-h-img-main1 {
+  grid-area: main1;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-h-img-main4 {
+  grid-area: main4;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-h-img-main5 {
+  grid-area: main5;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card-h-img-main8 {
+  grid-area: main8;
+  background-color: #aee89d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.img-card-h {
+  object-fit: contain;
+}
+
+.card-h-text-main2 {
+  grid-area: main2;
+}
+
+.card-h-text-main3 {
+  grid-area: main3;
+}
+
+.card-h-text-main6 {
+  grid-area: main6;
+}
+
+.card-h-text-main7 {
+  grid-area: main7;
+}
+
+.grid-contenedor-materiales {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 40px auto auto auto;
+  grid-template-areas: "header" "nav" "main" "materiales" "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
+.materiales_materiales {
+  grid-area: materiales;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.card-verticarl-materiales {
+  width: 225px;
+  padding: 1%;
+}
+
+.grid-contenedor-trabajos {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto 40px auto auto auto auto auto;
+  grid-template-areas: "header header header header header header " "nav nav nav nav nav nav " "main main main main main main " "c1  c1   c2   c3   c3   c4" "c5  c6   c7   c7   c8   c4" "c9  c6   c10  c11  c12  c13" "c9  c14  c15  c15  c12  c16" "footer footer footer footer footer footer ";
+}
+
+.header__trabajos {
+  grid-area: header;
+}
+
+.nav__trabajos {
+  grid-area: nav_t;
+}
+
+.main_trabajos {
+  grid-area: main_t;
+}
+
+.caja1 {
+  grid-area: c1;
+  background-color: rgb(18, 121, 121);
+}
+
+.caja2 {
+  grid-area: c2;
+  background-color: rgb(74, 54, 206);
+}
+
+.caja3 {
+  grid-area: c3;
+  background-color: rgb(206, 69, 195);
+}
+
+.caja4 {
+  grid-area: c4;
+  background-color: rgb(217, 255, 0);
+}
+
+.caja5 {
+  grid-area: c5;
+  background-color: rgb(122, 62, 154);
+}
+
+.caja6 {
+  grid-area: c6;
+  background-color: rgb(210, 181, 37);
+}
+
+.caja7 {
+  grid-area: c7;
+  background-color: rgb(61, 22, 233);
+}
+
+.caja8 {
+  grid-area: c8;
+  background-color: rgb(212, 118, 202);
+}
+
+.caja9 {
+  grid-area: c9;
+  background-color: rgb(68, 73, 171);
+}
+
+.caja10 {
+  grid-area: c10;
+  background-color: rgb(50, 177, 107);
+}
+
+.caja11 {
+  grid-area: c11;
+  background-color: rgb(82, 109, 30);
+}
+
+.caja12 {
+  grid-area: c12;
+  background-color: rgb(133, 92, 208);
+}
+
+.caja13 {
+  grid-area: c13;
+  background-color: rgb(160, 194, 48);
+}
+
+.caja14 {
+  grid-area: c14;
+  background-color: rgb(41, 65, 186);
+}
+
+.caja15 {
+  grid-area: c15;
+  background-color: rgb(163, 60, 219);
+}
+
+.caja16 {
+  grid-area: c16;
+  background-color: rgb(46, 164, 227);
+}
+
+.footer__trabajos {
+  grid-area: footer;
+}
+
+/* MEDIAS QUERIES - Tamaño L*/
 @media screen and (max-width: 510px) {
-
-    body {
-        background-color: aqua;
-    }
-
-    .nav {
-        grid-area: nav;
-        background-color: rgb(158, 69, 190);
-        display: flex;
-        align-content: center;
-        justify-content: center;
-
-    }
-
-    h1 {
-        font-size: 1.8rem;
-        text-align: center;
-        margin: .25rem 0rem .25rem 0rem;
-    }
-
-    h2 {
-        font-size: 1.6rem;
-        color: blanchedalmond;
-        padding: 0rem 0rem 0rem 1.5rem;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        margin: 1rem 0rem 0rem 0rem;
-    }
-
-    h4 {
-        font-size: 1.3rem;
-        margin: 1rem 0rem 1rem 0rem;
-    }
-
-    h5 {
-        font-size: 1.5rem;
-        color: blanchedalmond;
-        padding: 1rem 0rem 1rem 0rem;
-
-    }
-
-    p {
-        font-size: 1rem;
-        line-height: 1.2;
-    }
-
-    .card-v-img {
-        margin: 1%;
-        min-width: 100%;
-
-
-    }
-
-
-    .imgtrabajosmobile {
-        display: flex;
-    }
-
-    .imgtrabajosgrande {
-        display: none;
-    }
+  body {
+    background-color: aqua;
+  }
+  .nav {
+    grid-area: nav;
+    background-color: rgb(158, 69, 190);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0.25rem 0rem 0.25rem 0rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+    color: blanchedalmond;
+    padding: 0rem 0rem 0rem 1.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+  h5 {
+    font-size: 1.5rem;
+    color: blanchedalmond;
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  .card-v-img {
+    margin: 1%;
+    min-width: 100%;
+  }
+  .imgtrabajosmobile {
+    display: flex;
+  }
+  .imgtrabajosgrande {
+    display: none;
+  }
+  .grid-contenedor-trabajos {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto;
+    grid-template-areas: "header header header" "nav nav nav" "main main main" "c1  c1   c2" "c5  c6   c2" "c9  c6   c10" "c9  c14  c15" "footer footer footer";
+  }
+  .header__trabajos {
+    grid-area: header;
+  }
+  .nav__trabajos {
+    grid-area: nav_t;
+  }
+  .main_trabajos {
+    grid-area: main_t;
+  }
+  .caja1 {
+    grid-area: c1;
+    background-color: rgb(18, 121, 121);
+  }
+  .caja2 {
+    grid-area: c2;
+    background-color: rgb(74, 54, 206);
+  }
+  .caja3 {
+    grid-area: c3;
+    background-color: rgb(206, 69, 195);
+    display: none;
+  }
+  .caja4 {
+    grid-area: c4;
+    background-color: rgb(41, 200, 23);
+    display: none;
+  }
+  .caja5 {
+    grid-area: c5;
+    background-color: rgb(122, 62, 154);
+  }
+  .caja6 {
+    grid-area: c6;
+    background-color: rgb(210, 181, 37);
+  }
+  .caja7 {
+    grid-area: c7;
+    background-color: rgb(61, 22, 233);
+    display: none;
+  }
+  .caja8 {
+    grid-area: c8;
+    background-color: rgb(212, 118, 202);
+    display: none;
+  }
+  .caja9 {
+    grid-area: c9;
+    background-color: rgb(68, 73, 171);
+  }
+  .caja10 {
+    grid-area: c10;
+    background-color: rgb(50, 177, 107);
+  }
+  .caja11 {
+    grid-area: c11;
+    background-color: rgb(82, 109, 30);
+    display: none;
+  }
+  .caja12 {
+    grid-area: c12;
+    background-color: rgb(133, 92, 208);
+    display: none;
+  }
+  .caja13 {
+    grid-area: c13;
+    background-color: rgb(160, 194, 48);
+    display: none;
+  }
+  .caja14 {
+    grid-area: c14;
+    background-color: rgb(41, 65, 186);
+  }
+  .caja15 {
+    grid-area: c15;
+    background-color: rgb(163, 60, 219);
+  }
+  .caja16 {
+    grid-area: c16;
+    background-color: rgb(46, 164, 227);
+    display: none;
+  }
+  .footer__trabajos {
+    grid-area: footer;
+  }
 }
-
-
-/* MEDIAS QUERIS INDEX - Tamaño S*/
-
+/* MEDIAS QUERIES - Tamaño S*/
 @media screen and (max-width: 360px) {
-
-    .grid-contenedor {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-        grid-template-areas:
-            "header"
-            "nav"
-            "carrusel"
-            "main"
-            "main1"
-            "main2"
-            "main4"
-            "main3"
-            "main5"
-            "main6"
-            "trabajos"
-            "footer";
-    }
-
-    body {
-        background-color: rgb(200, 200, 200);
-    }
-
-    .nav {
-        grid-area: nav;
-        background-color: rgb(227, 93, 9);
-        display: flex;
-        align-content: center;
-        justify-content: center;
-
-    }
-
-    .carrusel {
-        grid-area: carrusel;
-    }
-
-    .main {
-        background-color: #0a675f;
-        grid-area: main;
-    }
-
-    .tiradetrabajos {
-        grid-area: trabajos;
-    }
-
-    .trabajos {
-        width: 100%;
-        background-color: #aee89d;
-    }
-
-
-    .footer {
-        grid-area: footer;
-        background-color: rgb(104, 96, 96);
-    }
-
-    .textoderecha {
-        text-align: left;
-    }
-
+  .grid-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "carrusel" "main" "main1" "main2" "main4" "main3" "main5" "main6" "trabajos" "footer";
+  }
+  body {
+    background-color: rgb(203, 21, 21);
+  }
+  .nav {
+    grid-area: nav;
+    background-color: rgb(227, 93, 9);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .carrusel {
+    grid-area: carrusel;
+  }
+  .main {
+    background-color: #0a675f;
+    grid-area: main;
+  }
+  .tiradetrabajos {
+    grid-area: trabajos;
+  }
+  .trabajos {
+    width: 100%;
+  }
+  .textoderecha {
+    text-align: left;
+  }
+  .grid-contenedor-equipos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header" "nav" "main" "main1" "main2" "main4" "main3" "main5" "main6" "main8" "main7" "footer";
+  }
+  body {
+    background-color: rgb(203, 21, 21);
+  }
+  .nav {
+    grid-area: nav;
+    background-color: rgb(227, 93, 9);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .main {
+    background-color: #0a675f;
+    grid-area: main;
+  }
+  .textoderecha {
+    text-align: left;
+  }
+  .grid-contenedor-trabajos {
+    width: 100%;
+    margin: 0 auto;
+    font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto auto auto auto;
+    grid-template-areas: "header header" "nav nav" "main main" "c1  c1" "c5  c6" "c9  c6" "c9  c14" "c2  c2" "c10  c15" "footer footer";
+  }
+  .header__trabajos {
+    grid-area: header;
+  }
+  .nav__trabajos {
+    grid-area: nav_t;
+  }
+  .main_trabajos {
+    grid-area: main_t;
+  }
+  .caja1 {
+    grid-area: c1;
+    background-color: rgb(18, 121, 121);
+  }
+  .caja2 {
+    grid-area: c2;
+    background-color: rgb(74, 54, 206);
+  }
+  .caja3 {
+    grid-area: c3;
+    background-color: rgb(206, 69, 195);
+    display: none;
+  }
+  .caja4 {
+    grid-area: c4;
+    background-color: rgb(41, 200, 23);
+    display: none;
+  }
+  .caja5 {
+    grid-area: c5;
+    background-color: rgb(122, 62, 154);
+  }
+  .caja6 {
+    grid-area: c6;
+    background-color: rgb(210, 181, 37);
+  }
+  .caja7 {
+    grid-area: c7;
+    background-color: rgb(61, 22, 233);
+    display: none;
+  }
+  .caja8 {
+    grid-area: c8;
+    background-color: rgb(212, 118, 202);
+    display: none;
+  }
+  .caja9 {
+    grid-area: c9;
+    background-color: rgb(68, 73, 171);
+  }
+  .caja10 {
+    grid-area: c10;
+    background-color: rgb(50, 177, 107);
+  }
+  .caja11 {
+    grid-area: c11;
+    background-color: rgb(82, 109, 30);
+    display: none;
+  }
+  .caja12 {
+    grid-area: c12;
+    background-color: rgb(133, 92, 208);
+    display: none;
+  }
+  .caja13 {
+    grid-area: c13;
+    background-color: rgb(160, 194, 48);
+    display: none;
+  }
+  .caja14 {
+    grid-area: c14;
+    background-color: rgb(41, 65, 186);
+  }
+  .caja15 {
+    grid-area: c15;
+    background-color: rgb(163, 60, 219);
+  }
+  .caja16 {
+    grid-area: c16;
+    background-color: rgb(46, 164, 227);
+    display: none;
+  }
+  .footer__trabajos {
+    grid-area: footer;
+  }
+  .footer__logo {
+    width: 75px;
+    display: flex;
+    align-self: center;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,547 @@
+
+/* MEDIAS QUERIES - Tamaño L*/
+
+@media screen and (max-width: 510px) {
+
+// Pages -> index.html //
+
+    body {
+        background-color: aqua;
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: rgb(158, 69, 190);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin: .25rem 0rem .25rem 0rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        color: blanchedalmond;
+        padding: 0rem 0rem 0rem 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+        margin: 1rem 0rem 1rem 0rem;
+    }
+
+    h5 {
+        font-size: 1.5rem;
+        color: blanchedalmond;
+        padding: 1rem 0rem 1rem 0rem;
+
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .card-v-img {
+        margin: 1%;
+        min-width: 100%;
+
+    }
+
+    .imgtrabajosmobile {
+        display: flex;
+    }
+
+    .imgtrabajosgrande {
+        display: none;
+    }
+
+// pages -> trabajos.html //
+
+.grid-contenedor-trabajos {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto ;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "main main main"
+        "c1  c1   c2"
+        "c5  c6   c2"
+        "c9  c6   c10"
+        "c9  c14  c15"
+        "footer footer footer";
+}
+
+
+.header__trabajos {
+    grid-area: header;
+}
+
+.nav__trabajos {
+    grid-area: nav_t;
+}
+
+.main_trabajos {
+    grid-area: main_t;
+}
+
+.caja1 {
+    grid-area: c1;
+    background-color: rgb(18, 121, 121);
+}
+
+.caja2 {
+    grid-area: c2;
+    background-color: rgb(74, 54, 206);
+}
+
+.caja3 {
+    grid-area: c3;
+    background-color: rgb(206, 69, 195);
+    display:none;
+}
+
+.caja4 {
+    grid-area: c4;
+    background-color: rgb(41, 200, 23);
+    display:none;
+    }
+
+.caja5 {
+    grid-area: c5;
+    background-color: rgb(122, 62, 154);
+}
+
+.caja6 {
+    grid-area: c6;
+    background-color: rgb(210, 181, 37);
+}
+
+.caja7 {
+    grid-area: c7;
+    background-color: rgb(61, 22, 233);
+    display:none;
+}
+
+.caja8 {
+    grid-area: c8;
+    background-color: rgb(212, 118, 202);
+    display:none;
+}
+
+.caja9 {
+    grid-area: c9;
+    background-color: rgb(68, 73, 171);
+}
+
+.caja10 {
+    grid-area: c10;
+    background-color: rgb(50, 177, 107);
+}
+
+.caja11 {
+    grid-area: c11;
+    background-color: rgb(82, 109, 30);
+    display:none;
+}
+
+.caja12 {
+    grid-area: c12;
+    background-color: rgb(133, 92, 208);
+    display:none;
+}
+
+.caja13 {
+    grid-area: c13;
+    background-color: rgb(160, 194, 48);
+    display:none;
+}
+
+.caja14 {
+    grid-area: c14;
+    background-color: rgb(41, 65, 186);
+}
+
+.caja15 {
+    grid-area: c15;
+    background-color: rgb(163, 60, 219);
+}
+
+.caja16 {
+    grid-area: c16;
+    background-color: rgb(46, 164, 227);
+    display:none;
+}
+
+.footer__trabajos {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIAS QUERIES - Tamaño S*/
+
+@media screen and (max-width: 360px) {
+
+// Pages -> index.html //
+
+    .grid-contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "carrusel"
+            "main"
+            "main1"
+            "main2"
+            "main4"
+            "main3"
+            "main5"
+            "main6"
+            "trabajos"
+            "footer";
+    }
+
+    body {
+        background-color: rgb(203, 21, 21);
+    }
+
+    .nav {
+        grid-area: nav;
+        background-color: rgb(227, 93, 9);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .carrusel {
+        grid-area: carrusel;
+    }
+
+    .main {
+        background-color: #0a675f;
+        grid-area: main;
+    }
+
+    .tiradetrabajos {
+        grid-area: trabajos;
+    }
+
+    .trabajos {
+        width: 100%;
+
+    }
+    .textoderecha {
+        text-align: left;
+    }
+
+// Pages -> equipos.html //
+
+.grid-contenedor-equipos {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "main1"
+        "main2"
+        "main4"
+        "main3"
+        "main5"
+        "main6"
+        "main8"
+        "main7"
+        "footer";
+}
+
+body {
+    background-color: rgb(203, 21, 21);
+}
+
+.nav {
+    grid-area: nav;
+    background-color: rgb(227, 93, 9);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.main {
+    background-color: #0a675f;
+    grid-area: main;
+}
+
+.textoderecha {
+    text-align: left;
+}
+
+// pages -> trabajos.html //
+
+.grid-contenedor-trabajos {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto auto auto auto ;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "c1  c1"
+        "c5  c6"
+        "c9  c6"
+        "c9  c14"
+        "c2  c2"
+        "c10  c15"    
+        "footer footer";
+}
+
+.header__trabajos {
+    grid-area: header;
+}
+
+.nav__trabajos {
+    grid-area: nav_t;
+}
+
+.main_trabajos {
+    grid-area: main_t;
+}
+
+.caja1 {
+    grid-area: c1;
+    background-color: rgb(18, 121, 121);
+}
+
+.caja2 {
+    grid-area: c2;
+    background-color: rgb(74, 54, 206);
+}
+
+.caja3 {
+    grid-area: c3;
+    background-color: rgb(206, 69, 195);
+    display:none;
+}
+
+.caja4 {
+    grid-area: c4;
+    background-color: rgb(41, 200, 23);
+    display:none;
+    }
+
+.caja5 {
+    grid-area: c5;
+    background-color: rgb(122, 62, 154);
+}
+
+.caja6 {
+    grid-area: c6;
+    background-color: rgb(210, 181, 37);
+}
+
+.caja7 {
+    grid-area: c7;
+    background-color: rgb(61, 22, 233);
+    display:none;
+}
+
+.caja8 {
+    grid-area: c8;
+    background-color: rgb(212, 118, 202);
+    display:none;
+}
+
+.caja9 {
+    grid-area: c9;
+    background-color: rgb(68, 73, 171);
+}
+
+.caja10 {
+    grid-area: c10;
+    background-color: rgb(50, 177, 107);
+}
+
+.caja11 {
+    grid-area: c11;
+    background-color: rgb(82, 109, 30);
+    display:none;
+}
+
+.caja12 {
+    grid-area: c12;
+    background-color: rgb(133, 92, 208);
+    display:none;
+}
+
+.caja13 {
+    grid-area: c13;
+    background-color: rgb(160, 194, 48);
+    display:none;
+}
+
+.caja14 {
+    grid-area: c14;
+    background-color: rgb(41, 65, 186);
+}
+
+.caja15 {
+    grid-area: c15;
+    background-color: rgb(163, 60, 219);
+}
+
+.caja16 {
+    grid-area: c16;
+    background-color: rgb(46, 164, 227);
+    display:none;
+}
+
+.footer__trabajos {
+    grid-area: footer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Fotter General //
+
+.footer__logo {
+    width: 75px;
+    display: flex;
+    align-self: center;
+
+}
+
+}

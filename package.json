@@ -1,0 +1,19 @@
+{
+  "name": "20221109-mariomucilli-carpetagit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mucillimario/repositorio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mucillimario/repositorio/issues"
+  },
+  "homepage": "https://github.com/mucillimario/repositorio#readme"
+}

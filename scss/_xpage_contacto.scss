@@ -1,0 +1,69 @@
+/* Pages CONTACTO */
+ 
+.section-contacto {
+    display: flex;
+
+    width: 100%;
+    
+}
+ 
+.section-contacto h2 {
+    padding: 1.5rem 0rem 1.5rem 1.5rem;
+}
+
+.formulario {
+    background-color: #444;
+    padding: 1rem 6rem 2rem 6rem;
+    width:40%;
+}
+ 
+ 
+.formulario p {
+    color: blanchedalmond;
+}
+ 
+.section-contacto h2 {
+    padding-left: 0rem;
+}
+ 
+label {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+ 
+.boton {
+ 
+    background-color: #b5b5b5;
+    padding: 0.5rem 2.5rem;
+    border-radius: 1rem;
+}
+ 
+ 
+.boton:hover {
+    background-color: aqua;
+}
+
+ 
+.form-input {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+ 
+}
+ 
+.form-textarea {
+    margin: 10px;
+    display: flex;
+    width: 100%;
+    height: 10rem;
+ 
+}
+
+
+.mapa {
+    background-color: #032a64;
+    padding: 1rem 6rem 2rem 6rem;
+    width:40%;
+    
+}
+ 

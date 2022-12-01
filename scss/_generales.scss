@@ -1,0 +1,185 @@
+/* 1 rem = 10 px */
+
+html {
+    font-size: 62.5%;
+}
+
+/* Reseteo de espacios a los lados y hacia adentro de las cajas*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $background-body;
+}
+
+/* CSS HEADER */
+.header {
+    grid-area: header;
+    background-color: rgb(236, 225, 8);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header_logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header__img-logo {
+    width: 75%;  
+    
+}
+
+.header a {
+    display:flex;
+    justify-content: center;
+}
+
+/* CSS NAV */
+/* 
+.index__bg-nav {
+    background-image: radial-gradient(#a6d3eb, #a6d3eb);
+}
+
+.navbar-nav{
+    display: flex;
+    justify-content: center;
+    }
+
+    .nav-link {
+        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+        font-size: var(--bs-nav-link-font-size);
+        font-weight: var(--bs-nav-link-font-weight);
+        color: var(--bs-nav-link-color);
+        text-decoration: none;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+
+    }
+     */
+
+
+.nav {
+    grid-area: nav;
+    background-color: $background-nav;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.nav-li {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    list-style-type: none;
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    width: 80%;
+    height: 100%;
+
+}
+
+.nav-li a {
+    color: rgb(19, 13, 128);
+    font-size: 1.3rem;
+    text-decoration:none;
+
+    /* background-color: #95a06d; */
+    /* padding: .5rem .5rem .5rem .5rem;
+    border-radius: .5rem; */
+}
+
+.nav-li a:hover {
+    font-weight: 600;
+    color: rgb(4, 7, 57);
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
+
+
+
+/* CSS INDEX-FOOTER */
+
+.footer {
+    grid-area: footer;
+    background-color: $background-footer
+}
+
+.footer__contendor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem 1rem 0rem 1rem;
+}
+
+.footer__caja {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 100px;
+    display: flex;
+    align-self: center;
+
+}
+
+.footer__derechos {
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer__caja li {
+    color: antiquewhite;
+    list-style-type: none;
+}
+
+.footer__caja h5 {
+    font-size: 1.8rem;
+    color: antiquewhite;
+    line-height: 1.28;
+
+}
+
+.footer__caja p {
+    font-size: 1rem;
+    color: antiquewhite;
+    line-height: 1.28;
+}
+
+.footer__caja a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.footer__derechos p {
+    font-size: 1rem;
+    color: antiquewhite;
+    line-height: 1.28;
+}

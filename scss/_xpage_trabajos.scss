@@ -1,0 +1,116 @@
+// Css de page Equipos
+
+.grid-contenedor-trabajos {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto ;
+    grid-template-areas:
+        "header header header header header header "
+        "nav nav nav nav nav nav "
+        "main main main main main main "
+        "c1  c1   c2   c3   c3   c4"
+        "c5  c6   c7   c7   c8   c4"
+        "c9  c6   c10  c11  c12  c13"
+        "c9  c14  c15  c15  c12  c16"
+        "footer footer footer footer footer footer ";
+}
+
+
+.header__trabajos {
+    grid-area: header;
+}
+
+.nav__trabajos {
+    grid-area: nav_t;
+}
+
+.main_trabajos {
+    grid-area: main_t;
+}
+
+.caja1 {
+    grid-area: c1;
+    background-color: rgb(18, 121, 121);
+}
+
+.caja2 {
+    grid-area: c2;
+    background-color: rgb(74, 54, 206);
+}
+
+.caja3 {
+    grid-area: c3;
+    background-color: rgb(206, 69, 195);
+}
+
+.caja4 {
+    grid-area: c4;
+    background-color: rgb(217, 255, 0);
+}
+
+.caja5 {
+    grid-area: c5;
+    background-color: rgb(122, 62, 154);
+}
+
+.caja6 {
+    grid-area: c6;
+    background-color: rgb(210, 181, 37);
+}
+
+.caja7 {
+    grid-area: c7;
+    background-color: rgb(61, 22, 233);
+}
+
+.caja8 {
+    grid-area: c8;
+    background-color: rgb(212, 118, 202);
+}
+
+.caja9 {
+    grid-area: c9;
+    background-color: rgb(68, 73, 171);
+}
+
+.caja10 {
+    grid-area: c10;
+    background-color: rgb(50, 177, 107);
+}
+
+.caja11 {
+    grid-area: c11;
+    background-color: rgb(82, 109, 30);
+}
+
+.caja12 {
+    grid-area: c12;
+    background-color: rgb(133, 92, 208);
+}
+
+.caja13 {
+    grid-area: c13;
+    background-color: rgb(160, 194, 48);
+}
+
+.caja14 {
+    grid-area: c14;
+    background-color: rgb(41, 65, 186);
+}
+
+.caja15 {
+    grid-area: c15;
+    background-color: rgb(163, 60, 219);
+}
+
+.caja16 {
+    grid-area: c16;
+    background-color: rgb(46, 164, 227);
+}
+
+.footer__trabajos {
+    grid-area: footer;
+}

@@ -1,0 +1,106 @@
+
+.grid-contenedor {
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 40px auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "header        header"
+        "nav           nav"
+        "carrusel      carrusel"
+        "main           main"
+        "main1         main2"
+        "main3         main4"
+        "main5         main6"
+        "trabajos     trabajos"
+        "footer        footer";
+}
+
+/* CSS CARRUSEL */
+
+.carrusel {
+    grid-area: carrusel;
+}
+
+/* CSS MAIN */
+
+.main {
+    background-color: #31c4a480;
+    grid-area: main;
+}
+
+
+.card-h-img-main1 {
+    grid-area: main1;
+    background-color: #aee89d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-h-img-main4 {
+    grid-area: main4;
+    background-color: #aee89d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-h-img-main5 {
+    grid-area: main5;
+    background-color: #aee89d;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.img-card-h {
+    object-fit: contain;
+}
+
+.card-h-text-main2 {
+    grid-area: main2;
+}
+
+.card-h-text-main3 {
+    grid-area: main3;
+}
+
+.card-h-text-main6 {
+    grid-area: main6;
+}
+
+
+/* CSS INDEX-TRABAJOS */
+
+.tiradetrabajos {
+    grid-area: trabajos;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $background-trabajos;
+}
+
+.trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.card-v-img {
+    width: 23%;
+
+}
+
+.imgtrabajosmobile {
+    display: none;
+}
+
+.imgtrabajosgrande {
+    display: flex;
+}
