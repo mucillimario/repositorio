@@ -54,6 +54,7 @@
 
     .card-v-img {
         min-width: 100%;
+        padding-bottom: 1rem;
 
     }
 
@@ -483,6 +484,32 @@ body {
 }
 
 
+// pages -> contacto.html //
+ 
+.section-contacto {
+    display: flex;
+flex-direction: column;
+    width: 100%;
+    
+}
+
+
+.mapa {
+    background-color: #5cc50d;
+    padding: 1rem 6rem 2rem 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.formulario {
+    background-color: #444;
+    padding: 1rem 6rem 2rem 6rem;
+    width:100%;
+}
 
 
 

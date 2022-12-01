@@ -301,20 +301,42 @@ p {
   display: flex;
 }
 
-/* Pages CONTACTO */
+.grid-contenedor-contacto {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Lucirgb(199, 70, 70)Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 40px auto auto auto;
+  grid-template-areas: "header" "nav" "main" "section-contacto" "footer";
+}
+
 .section-contacto {
   display: flex;
   width: 100%;
 }
 
-.section-contacto h2 {
-  padding: 1.5rem 0rem 1.5rem 1.5rem;
+.mapa {
+  background-color: #032a64;
+  padding: 1rem 6rem 2rem 6rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .formulario {
   background-color: #444;
   padding: 1rem 6rem 2rem 6rem;
-  width: 40%;
+  width: 50%;
+}
+
+.textocentrado {
+  text-align: center;
+}
+
+.section-contacto h2 {
+  padding: 1.5rem 0rem 1.5rem 1.5rem;
 }
 
 .formulario p {
@@ -351,12 +373,6 @@ label {
   display: flex;
   width: 100%;
   height: 10rem;
-}
-
-.mapa {
-  background-color: #032a64;
-  padding: 1rem 6rem 2rem 6rem;
-  width: 40%;
 }
 
 .grid-contenedor-equipos {
@@ -613,6 +629,7 @@ label {
   }
   .card-v-img {
     min-width: 100%;
+    padding-bottom: 1rem;
   }
   .imgtrabajosmobile {
     display: flex;
@@ -861,6 +878,24 @@ label {
   }
   .footer__trabajos {
     grid-area: footer;
+  }
+  .section-contacto {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .mapa {
+    background-color: #5cc50d;
+    padding: 1rem 6rem 2rem 6rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario {
+    background-color: #444;
+    padding: 1rem 6rem 2rem 6rem;
+    width: 100%;
   }
   .footer__logo {
     width: 75px;
