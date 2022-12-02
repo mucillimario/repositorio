@@ -10,7 +10,7 @@
     grid-template-areas:
         "header        header"
         "nav           nav"
-        "main           main"
+        "main          main"
         "main1         main2"
         "main3         main4"
         "main5         main6"
@@ -21,62 +21,41 @@
 /* CSS MAIN */
 
 .main {
-    background-color: #099488;
     grid-area: main;
 }
 
-
-.card-h-img-main1 {
+.main01 {
     grid-area: main1;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
 }
 
-.card-h-img-main4 {
+.main04 {
     grid-area: main4;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
-.card-h-img-main5 {
+.main05 {
     grid-area: main5;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
-.card-h-img-main8 {
+.main08 {
     grid-area: main8;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .img-card-h {
     object-fit: contain;
 }
 
-.card-h-text-main2 {
+.main02 {
     grid-area: main2;
 }
 
-.card-h-text-main3 {
+.main03 {
     grid-area: main3;
 }
 
-.card-h-text-main6 {
+.main06 {
     grid-area: main6;
 }
 
-.card-h-text-main7 {
+.main07 {
     grid-area: main7;
 }
-
-

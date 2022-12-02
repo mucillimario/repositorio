@@ -1,4 +1,3 @@
-
 .grid-contenedor {
     width: 100%;
     margin: 0 auto;
@@ -26,51 +25,45 @@
 
 /* CSS MAIN */
 
-.main {
-    background-color: #31c4a480;
-    grid-area: main;
+// .main {
+//     background-color: $background-main;
+//     grid-area: main;
+// }
+
+.card-h-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 
-.card-h-img-main1 {
+.main01 {
     grid-area: main1;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
+    background-color: black;
 }
 
-.card-h-img-main4 {
+.main04 {
     grid-area: main4;
-    background-color: #aee89d;
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
-.card-h-img-main5 {
+.main05 {
     grid-area: main5;
-    background-color: #aee89d;
-    width: 400%;
-    display: flex;
-    justify-content: center;
 }
 
-.img-card-h img{
+
+.img-card-h {
     object-fit: contain;
-
 }
 
-.card-h-text-main2 {
+.main02 {
     grid-area: main2;
 }
 
-.card-h-text-main3 {
+.main03 {
     grid-area: main3;
 }
 
-.card-h-text-main6 {
+.main06 {
     grid-area: main6;
 }
 
@@ -88,7 +81,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
     justify-content: space-between;
     padding: 1rem 0rem;
 }

@@ -16,13 +16,13 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(223, 203, 203);
+  background-color: rgb(254, 252, 252);
 }
 
 /* CSS HEADER */
 .header {
   grid-area: header;
-  background-color: rgb(236, 225, 8);
+  background-color: #fbff00;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,7 +68,7 @@ body {
      */
 .nav {
   grid-area: nav;
-  background-color: #cbcb1c;
+  background-color: #ccd60a;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -95,15 +95,29 @@ ul {
   color: rgb(19, 13, 128);
   font-size: 1.3rem;
   text-decoration: none;
-  /* background-color: #95a06d; */
-  /* padding: .5rem .5rem .5rem .5rem;
-  border-radius: .5rem; */
 }
 
 .nav-li a:hover {
   font-weight: 600;
   color: rgb(4, 7, 57);
   text-decoration-line: underline;
+}
+
+.main {
+  grid-area: main;
+  background-color: #103522;
+}
+
+/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */ /* CSS MAIN */
+.card-h-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}
+
+.card-h-grid-padding_card {
+  padding: 1rem;
 }
 
 /* CSS INDEX-FOOTER */
@@ -140,30 +154,30 @@ ul {
 }
 
 .footer__caja li {
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   list-style-type: none;
 }
 
 .footer__caja h5 {
   font-size: 1.8rem;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   line-height: 1.28;
 }
 
 .footer__caja p {
   font-size: 1rem;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   line-height: 1.28;
 }
 
 .footer__caja a {
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 .footer__derechos p {
   font-size: 1rem;
-  color: antiquewhite;
+  color: rgb(255, 255, 255);
   line-height: 1.28;
 }
 
@@ -228,48 +242,38 @@ p {
 }
 
 /* CSS MAIN */
-.main {
-  background-color: rgba(49, 196, 164, 0.5019607843);
-  grid-area: main;
+.card-h-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.card-h-img-main1 {
+.main01 {
   grid-area: main1;
-  background-color: #aee89d;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: black;
 }
 
-.card-h-img-main4 {
+.main04 {
   grid-area: main4;
-  background-color: #aee89d;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
-.card-h-img-main5 {
+.main05 {
   grid-area: main5;
-  background-color: #aee89d;
-  width: 400%;
-  display: flex;
-  justify-content: center;
 }
 
-.img-card-h img {
+.img-card-h {
   object-fit: contain;
 }
 
-.card-h-text-main2 {
+.main02 {
   grid-area: main2;
 }
 
-.card-h-text-main3 {
+.main03 {
   grid-area: main3;
 }
 
-.card-h-text-main6 {
+.main06 {
   grid-area: main6;
 }
 
@@ -386,64 +390,47 @@ label {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto 40px auto auto auto auto auto auto auto;
-  grid-template-areas: "header        header" "nav           nav" "main           main" "main1         main2" "main3         main4" "main5         main6" "main7         main8" "footer        footer";
+  grid-template-areas: "header        header" "nav           nav" "main          main" "main1         main2" "main3         main4" "main5         main6" "main7         main8" "footer        footer";
 }
 
 /* CSS MAIN */
 .main {
-  background-color: #099488;
   grid-area: main;
 }
 
-.card-h-img-main1 {
+.main01 {
   grid-area: main1;
-  background-color: #aee89d;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
-.card-h-img-main4 {
+.main04 {
   grid-area: main4;
-  background-color: #aee89d;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
-.card-h-img-main5 {
+.main05 {
   grid-area: main5;
-  background-color: #aee89d;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
-.card-h-img-main8 {
+.main08 {
   grid-area: main8;
-  background-color: #aee89d;
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .img-card-h {
   object-fit: contain;
 }
 
-.card-h-text-main2 {
+.main02 {
   grid-area: main2;
 }
 
-.card-h-text-main3 {
+.main03 {
   grid-area: main3;
 }
 
-.card-h-text-main6 {
+.main06 {
   grid-area: main6;
 }
 
-.card-h-text-main7 {
+.main07 {
   grid-area: main7;
 }
 
@@ -594,12 +581,8 @@ label {
 
 /* MEDIAS QUERIES - Tamaño L*/
 @media screen and (max-width: 510px) {
-  body {
-    background-color: aqua;
-  }
   .nav {
     grid-area: nav;
-    background-color: rgb(158, 69, 190);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -742,12 +725,8 @@ label {
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
     grid-template-areas: "header" "nav" "carrusel" "main" "main1" "main2" "main4" "main3" "main5" "main6" "trabajos" "footer";
   }
-  body {
-    background-color: rgb(203, 21, 21);
-  }
   .nav {
     grid-area: nav;
-    background-color: rgb(227, 93, 9);
     display: flex;
     align-content: center;
     justify-content: center;
@@ -756,7 +735,6 @@ label {
     grid-area: carrusel;
   }
   .main {
-    background-color: #0a675f;
     grid-area: main;
   }
   .tiradetrabajos {
@@ -765,26 +743,18 @@ label {
   .trabajos {
     width: 100%;
   }
-  .textoderecha {
-    text-align: left;
-  }
   .grid-contenedor-equipos {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "header" "nav" "main" "main1" "main2" "main4" "main3" "main5" "main6" "main8" "main7" "footer";
-  }
-  body {
-    background-color: rgb(203, 21, 21);
+    grid-template-areas: "header" "nav" "main" "main1" "main2" "main4" "main3" "main5" "main6" "main7" "main8" "footer";
   }
   .nav {
     grid-area: nav;
-    background-color: rgb(227, 93, 9);
     display: flex;
     align-content: center;
     justify-content: center;
   }
   .main {
-    background-color: #0a675f;
     grid-area: main;
   }
   .textoderecha {
@@ -895,11 +865,6 @@ label {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .formulario {
-    background-color: #444;
-    padding: 1rem 6rem 2rem 6rem;
-    width: 100%;
   }
   .footer__logo {
     width: 75px;
