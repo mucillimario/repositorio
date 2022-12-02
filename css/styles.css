@@ -290,7 +290,8 @@ p {
 }
 
 .card-v-img {
-  width: 23%;
+  width: 16%;
+  border: solid red;
 }
 
 .imgtrabajosmobile {
@@ -628,7 +629,7 @@ label {
     line-height: 1.2;
   }
   .card-v-img {
-    min-width: 100%;
+    min-width: 48%;
     padding-bottom: 1rem;
   }
   .imgtrabajosmobile {
