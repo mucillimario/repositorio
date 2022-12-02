@@ -291,7 +291,6 @@ p {
 
 .card-v-img {
   width: 16%;
-  border: solid red;
 }
 
 .imgtrabajosmobile {
@@ -324,6 +323,10 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.iframemapagooglemaps {
+  width: 100%;
 }
 
 .formulario {
