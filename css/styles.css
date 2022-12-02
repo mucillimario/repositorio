@@ -250,7 +250,6 @@ p {
 
 .main01 {
   grid-area: main1;
-  background-color: black;
 }
 
 .main04 {
@@ -327,10 +326,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.iframemapagooglemaps {
-  width: 100%;
 }
 
 .formulario {
