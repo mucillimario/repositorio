@@ -23,19 +23,7 @@
     grid-area: carrusel;
 }
 
-/* CSS MAIN */
-
-// .main {
-//     background-color: $background-main;
-//     grid-area: main;
-// }
-
-.card-h-img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
+/* CSS MAIN SERVICIOS */
 
 .main01 {
     grid-area: main1;
@@ -47,11 +35,6 @@
 
 .main05 {
     grid-area: main5;
-}
-
-
-.img-card-h {
-    object-fit: contain;
 }
 
 .main02 {
@@ -66,6 +49,17 @@
     grid-area: main6;
 }
 
+.img-card-h {
+    object-fit: contain;
+}
+
+.imgservicios-750x250 {
+    display:flex;
+}
+
+.imgservicios-400x250 {
+    display:none;
+}
 
 /* CSS INDEX-TRABAJOS */
 

@@ -31,29 +31,35 @@
     grid-area: main_t;
 }
 
+.img-trabajo{
+    width:100%;
+    padding: 1rem;
+
+    }
+
 .caja1 {
     grid-area: c1;
-    background-color: rgb(18, 121, 121);
+    background-color: rgb(122, 62, 154);
 }
 
 .caja2 {
     grid-area: c2;
-    background-color: rgb(74, 54, 206);
+    background-color: rgb(50, 21, 67);
 }
 
 .caja3 {
     grid-area: c3;
-    background-color: rgb(206, 69, 195);
+    background-color: rgb(79, 154, 62);
 }
 
 .caja4 {
     grid-area: c4;
-    background-color: rgb(217, 255, 0);
+    background-color: rgb(201, 17, 93);
 }
 
 .caja5 {
     grid-area: c5;
-    background-color: rgb(122, 62, 154);
+    background-color: rgb(192, 200, 39);
 }
 
 .caja6 {

@@ -1,9 +1,54 @@
+/* MEDIA QUERIES - Tamano L*/
 
-/* MEDIAS QUERIES - Tamaño L*/
+@media screen and (max-width: 799px) {
+
+    .imgtrabajosmobile {
+        display: flex;
+    }
+
+    .imgtrabajosgrande {
+        display: none;
+    }
+
+    .card-v-img {
+        min-width: 48%;
+        padding-bottom: 1rem;
+    }
+
+    .imgservicios-750x250 {
+        display: none;
+    }
+
+    .imgservicios-400x250 {
+        display: flex;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIAS QUERIES - Tamaño M*/
 
 @media screen and (max-width: 510px) {
 
-// Pages -> index.html //
+    // Pages -> index.html //
 
     .nav {
         grid-area: nav;
@@ -61,130 +106,130 @@
         display: none;
     }
 
-// pages -> trabajos.html //
+    // pages -> trabajos.html //
 
-.grid-contenedor-trabajos {
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto 40px auto auto auto auto auto ;
-    grid-template-areas:
-        "header header header"
-        "nav nav nav"
-        "main main main"
-        "c1  c1   c2"
-        "c5  c6   c2"
-        "c9  c6   c10"
-        "c9  c14  c15"
-        "footer footer footer";
-}
-
-
-.header__trabajos {
-    grid-area: header;
-}
-
-.nav__trabajos {
-    grid-area: nav_t;
-}
-
-.main_trabajos {
-    grid-area: main_t;
-}
-
-.caja1 {
-    grid-area: c1;
-    background-color: rgb(18, 121, 121);
-}
-
-.caja2 {
-    grid-area: c2;
-    background-color: rgb(74, 54, 206);
-}
-
-.caja3 {
-    grid-area: c3;
-    background-color: rgb(206, 69, 195);
-    display:none;
-}
-
-.caja4 {
-    grid-area: c4;
-    background-color: rgb(41, 200, 23);
-    display:none;
+    .grid-contenedor-trabajos {
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 40px auto auto auto auto auto;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "c1  c1   c2"
+            "c5  c6   c2"
+            "c9  c6   c10"
+            "c9  c14  c15"
+            "footer footer footer";
     }
 
-.caja5 {
-    grid-area: c5;
-    background-color: rgb(122, 62, 154);
-}
 
-.caja6 {
-    grid-area: c6;
-    background-color: rgb(210, 181, 37);
-}
+    .header__trabajos {
+        grid-area: header;
+    }
 
-.caja7 {
-    grid-area: c7;
-    background-color: rgb(61, 22, 233);
-    display:none;
-}
+    .nav__trabajos {
+        grid-area: nav_t;
+    }
 
-.caja8 {
-    grid-area: c8;
-    background-color: rgb(212, 118, 202);
-    display:none;
-}
+    .main_trabajos {
+        grid-area: main_t;
+    }
 
-.caja9 {
-    grid-area: c9;
-    background-color: rgb(68, 73, 171);
-}
+    .caja1 {
+        grid-area: c1;
+        background-color: rgb(18, 121, 121);
+    }
 
-.caja10 {
-    grid-area: c10;
-    background-color: rgb(50, 177, 107);
-}
+    .caja2 {
+        grid-area: c2;
+        background-color: rgb(74, 54, 206);
+    }
 
-.caja11 {
-    grid-area: c11;
-    background-color: rgb(82, 109, 30);
-    display:none;
-}
+    .caja3 {
+        grid-area: c3;
+        background-color: rgb(206, 69, 195);
+        display: none;
+    }
 
-.caja12 {
-    grid-area: c12;
-    background-color: rgb(133, 92, 208);
-    display:none;
-}
+    .caja4 {
+        grid-area: c4;
+        background-color: rgb(41, 200, 23);
+        display: none;
+    }
 
-.caja13 {
-    grid-area: c13;
-    background-color: rgb(160, 194, 48);
-    display:none;
-}
+    .caja5 {
+        grid-area: c5;
+        background-color: rgb(122, 62, 154);
+    }
 
-.caja14 {
-    grid-area: c14;
-    background-color: rgb(41, 65, 186);
-}
+    .caja6 {
+        grid-area: c6;
+        background-color: rgb(210, 181, 37);
+    }
 
-.caja15 {
-    grid-area: c15;
-    background-color: rgb(163, 60, 219);
-}
+    .caja7 {
+        grid-area: c7;
+        background-color: rgb(61, 22, 233);
+        display: none;
+    }
 
-.caja16 {
-    grid-area: c16;
-    background-color: rgb(46, 164, 227);
-    display:none;
-}
+    .caja8 {
+        grid-area: c8;
+        background-color: rgb(212, 118, 202);
+        display: none;
+    }
 
-.footer__trabajos {
-    grid-area: footer;
-}
+    .caja9 {
+        grid-area: c9;
+        background-color: rgb(68, 73, 171);
+    }
+
+    .caja10 {
+        grid-area: c10;
+        background-color: rgb(50, 177, 107);
+    }
+
+    .caja11 {
+        grid-area: c11;
+        background-color: rgb(82, 109, 30);
+        display: none;
+    }
+
+    .caja12 {
+        grid-area: c12;
+        background-color: rgb(133, 92, 208);
+        display: none;
+    }
+
+    .caja13 {
+        grid-area: c13;
+        background-color: rgb(160, 194, 48);
+        display: none;
+    }
+
+    .caja14 {
+        grid-area: c14;
+        background-color: rgb(41, 65, 186);
+    }
+
+    .caja15 {
+        grid-area: c15;
+        background-color: rgb(163, 60, 219);
+    }
+
+    .caja16 {
+        grid-area: c16;
+        background-color: rgb(46, 164, 227);
+        display: none;
+    }
+
+    .footer__trabajos {
+        grid-area: footer;
+    }
 
 
 }
@@ -218,7 +263,7 @@
 
 @media screen and (max-width: 360px) {
 
-// Pages -> index.html //
+    // Pages -> index.html //
 
     .grid-contenedor {
         grid-template-columns: 1fr;
@@ -255,264 +300,213 @@
         grid-area: main;
     }
 
+    p {
+        color: #346d09;
+        text-align: justify;
+    }
+
+    .textoderecha {
+        text-align: justify;
+    }
+
     .tiradetrabajos {
         grid-area: trabajos;
     }
 
     .trabajos {
         width: 100%;
+    }
+
+
+    // Pages -> equipos.html //
+
+    .grid-contenedor-equipos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "main1"
+            "main2"
+            "main4"
+            "main3"
+            "main5"
+            "main6"
+            "main7"
+            "main8"
+            "footer";
+    }
+
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+
+    // pages -> trabajos.html //
+
+    .grid-contenedor-trabajos {
+        width: 100%;
+        margin: 0 auto;
+        font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 40px auto auto auto auto auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "c1  c1"
+            "c5  c6"
+            "c9  c6"
+            "c9  c14"
+            "c2  c2"
+            "c10  c15"
+            "footer footer";
+    }
+
+    .header__trabajos {
+        grid-area: header;
+    }
+
+    .nav__trabajos {
+        grid-area: nav_t;
+    }
+
+    .main_trabajos {
+        grid-area: main_t;
+    }
+
+    .caja1 {
+        grid-area: c1;
+        background-color: rgb(18, 121, 121);
+    }
+
+    .caja2 {
+        grid-area: c2;
+        background-color: rgb(74, 54, 206);
+    }
+
+    .caja3 {
+        grid-area: c3;
+        background-color: rgb(206, 69, 195);
+        display: none;
+    }
+
+    .caja4 {
+        grid-area: c4;
+        background-color: rgb(41, 200, 23);
+        display: none;
+    }
+
+    .caja5 {
+        grid-area: c5;
+        background-color: rgb(122, 62, 154);
+    }
+
+    .caja6 {
+        grid-area: c6;
+        background-color: rgb(210, 181, 37);
+    }
+
+    .caja7 {
+        grid-area: c7;
+        background-color: rgb(61, 22, 233);
+        display: none;
+    }
+
+    .caja8 {
+        grid-area: c8;
+        background-color: rgb(212, 118, 202);
+        display: none;
+    }
+
+    .caja9 {
+        grid-area: c9;
+        background-color: rgb(68, 73, 171);
+    }
+
+    .caja10 {
+        grid-area: c10;
+        background-color: rgb(50, 177, 107);
+    }
+
+    .caja11 {
+        grid-area: c11;
+        background-color: rgb(82, 109, 30);
+        display: none;
+    }
+
+    .caja12 {
+        grid-area: c12;
+        background-color: rgb(133, 92, 208);
+        display: none;
+    }
+
+    .caja13 {
+        grid-area: c13;
+        background-color: rgb(160, 194, 48);
+        display: none;
+    }
+
+    .caja14 {
+        grid-area: c14;
+        background-color: rgb(41, 65, 186);
+    }
+
+    .caja15 {
+        grid-area: c15;
+        background-color: rgb(163, 60, 219);
+    }
+
+    .caja16 {
+        grid-area: c16;
+        background-color: rgb(46, 164, 227);
+        display: none;
+    }
+
+    .footer__trabajos {
+        grid-area: footer;
+    }
+
+
+    // pages -> contacto.html //
+
+    .section-contacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
 
     }
 
 
-// Pages -> equipos.html //
+    .mapa {
+        background-color: #5cc50d;
+        padding: 1rem 6rem 2rem 6rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-.grid-contenedor-equipos {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "main1"
-        "main2"
-        "main4"
-        "main3"
-        "main5"
-        "main6"
-        "main7"
-        "main8"
-        "footer";
-}
-
-
-.nav {
-    grid-area: nav;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-
-}
-
-.main {
-    grid-area: main;
-}
-
-.textoderecha {
-    text-align: left;
-}
-
-// pages -> trabajos.html //
-
-.grid-contenedor-trabajos {
-    width: 100%;
-    margin: 0 auto;
-    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto 40px auto auto auto auto auto auto auto auto ;
-    grid-template-areas:
-        "header header"
-        "nav nav"
-        "main main"
-        "c1  c1"
-        "c5  c6"
-        "c9  c6"
-        "c9  c14"
-        "c2  c2"
-        "c10  c15"    
-        "footer footer";
-}
-
-.header__trabajos {
-    grid-area: header;
-}
-
-.nav__trabajos {
-    grid-area: nav_t;
-}
-
-.main_trabajos {
-    grid-area: main_t;
-}
-
-.caja1 {
-    grid-area: c1;
-    background-color: rgb(18, 121, 121);
-}
-
-.caja2 {
-    grid-area: c2;
-    background-color: rgb(74, 54, 206);
-}
-
-.caja3 {
-    grid-area: c3;
-    background-color: rgb(206, 69, 195);
-    display:none;
-}
-
-.caja4 {
-    grid-area: c4;
-    background-color: rgb(41, 200, 23);
-    display:none;
     }
 
-.caja5 {
-    grid-area: c5;
-    background-color: rgb(122, 62, 154);
-}
+    // Fotter General //
 
-.caja6 {
-    grid-area: c6;
-    background-color: rgb(210, 181, 37);
-}
+    .footer__logo {
+        width: 75px;
+        display: flex;
+        align-self: center;
 
-.caja7 {
-    grid-area: c7;
-    background-color: rgb(61, 22, 233);
-    display:none;
-}
-
-.caja8 {
-    grid-area: c8;
-    background-color: rgb(212, 118, 202);
-    display:none;
-}
-
-.caja9 {
-    grid-area: c9;
-    background-color: rgb(68, 73, 171);
-}
-
-.caja10 {
-    grid-area: c10;
-    background-color: rgb(50, 177, 107);
-}
-
-.caja11 {
-    grid-area: c11;
-    background-color: rgb(82, 109, 30);
-    display:none;
-}
-
-.caja12 {
-    grid-area: c12;
-    background-color: rgb(133, 92, 208);
-    display:none;
-}
-
-.caja13 {
-    grid-area: c13;
-    background-color: rgb(160, 194, 48);
-    display:none;
-}
-
-.caja14 {
-    grid-area: c14;
-    background-color: rgb(41, 65, 186);
-}
-
-.caja15 {
-    grid-area: c15;
-    background-color: rgb(163, 60, 219);
-}
-
-.caja16 {
-    grid-area: c16;
-    background-color: rgb(46, 164, 227);
-    display:none;
-}
-
-.footer__trabajos {
-    grid-area: footer;
-}
-
-
-// pages -> contacto.html //
- 
-.section-contacto {
-    display: flex;
-flex-direction: column;
-    width: 100%;
-    
-}
-
-
-.mapa {
-    background-color: #5cc50d;
-    padding: 1rem 6rem 2rem 6rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Fotter General //
-
-.footer__logo {
-    width: 75px;
-    display: flex;
-    align-self: center;
-
-}
-
-// .footer__contendor {
-//     width: 100%;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     padding: 2rem 0rem 0rem 0rem;
-// }
+    }
 
 
 }

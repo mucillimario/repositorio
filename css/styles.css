@@ -16,13 +16,16 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: rgb(254, 252, 252);
+  background-color: rgb(51, 255, 0);
 }
 
 /* CSS HEADER */
 .header {
   grid-area: header;
   background-color: #fbff00;
+  background-image: url(../img/img-header.png);
+  background-size: cover;
+  background-position: center;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,7 +71,7 @@ body {
      */
 .nav {
   grid-area: nav;
-  background-color: #ccd60a;
+  background: linear-gradient(#7a7a7a, #2b2b2b, #2b2b2b, #2b2b2b, #2b2b2b, #7a7a7a);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -87,12 +90,12 @@ ul {
   font-weight: 400;
   margin-bottom: 0px;
   padding-left: 0px;
-  width: 80%;
+  width: 95%;
   height: 100%;
 }
 
 .nav-li a {
-  color: rgb(19, 13, 128);
+  color: rgb(240, 240, 240);
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -108,12 +111,13 @@ ul {
   background-color: #103522;
 }
 
-/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */ /* CSS MAIN */
+/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */
+/* CSS MAIN */
 .card-h-img {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: antiquewhite;
+  padding: 1rem;
 }
 
 .card-h-grid-padding_card {
@@ -154,30 +158,30 @@ ul {
 }
 
 .footer__caja li {
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   list-style-type: none;
 }
 
 .footer__caja h5 {
   font-size: 1.8rem;
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   line-height: 1.28;
 }
 
 .footer__caja p {
   font-size: 1rem;
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   line-height: 1.28;
 }
 
 .footer__caja a {
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   text-decoration: none;
 }
 
 .footer__derechos p {
   font-size: 1rem;
-  color: rgb(255, 255, 255);
+  color: rgb(240, 240, 240);
   line-height: 1.28;
 }
 
@@ -241,13 +245,7 @@ p {
   grid-area: carrusel;
 }
 
-/* CSS MAIN */
-.card-h-img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
+/* CSS MAIN SERVICIOS */
 .main01 {
   grid-area: main1;
 }
@@ -258,10 +256,6 @@ p {
 
 .main05 {
   grid-area: main5;
-}
-
-.img-card-h {
-  object-fit: contain;
 }
 
 .main02 {
@@ -276,12 +270,24 @@ p {
   grid-area: main6;
 }
 
+.img-card-h {
+  object-fit: contain;
+}
+
+.imgservicios-750x250 {
+  display: flex;
+}
+
+.imgservicios-400x250 {
+  display: none;
+}
+
 /* CSS INDEX-TRABAJOS */
 .tiradetrabajos {
   grid-area: trabajos;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(117, 198, 212);
+  background-color: rgb(221, 214, 0);
 }
 
 .trabajos {
@@ -490,29 +496,34 @@ label {
   grid-area: main_t;
 }
 
+.img-trabajo {
+  width: 100%;
+  padding: 1rem;
+}
+
 .caja1 {
   grid-area: c1;
-  background-color: rgb(18, 121, 121);
+  background-color: rgb(122, 62, 154);
 }
 
 .caja2 {
   grid-area: c2;
-  background-color: rgb(74, 54, 206);
+  background-color: rgb(50, 21, 67);
 }
 
 .caja3 {
   grid-area: c3;
-  background-color: rgb(206, 69, 195);
+  background-color: rgb(79, 154, 62);
 }
 
 .caja4 {
   grid-area: c4;
-  background-color: rgb(217, 255, 0);
+  background-color: rgb(201, 17, 93);
 }
 
 .caja5 {
   grid-area: c5;
-  background-color: rgb(122, 62, 154);
+  background-color: rgb(192, 200, 39);
 }
 
 .caja6 {
@@ -574,7 +585,26 @@ label {
   grid-area: footer;
 }
 
-/* MEDIAS QUERIES - Tamaño L*/
+/* MEDIA QUERIES - Tamano L*/
+@media screen and (max-width: 799px) {
+  .imgtrabajosmobile {
+    display: flex;
+  }
+  .imgtrabajosgrande {
+    display: none;
+  }
+  .card-v-img {
+    min-width: 48%;
+    padding-bottom: 1rem;
+  }
+  .imgservicios-750x250 {
+    display: none;
+  }
+  .imgservicios-400x250 {
+    display: flex;
+  }
+}
+/* MEDIAS QUERIES - Tamaño M*/
 @media screen and (max-width: 510px) {
   .nav {
     grid-area: nav;
@@ -732,6 +762,13 @@ label {
   .main {
     grid-area: main;
   }
+  p {
+    color: #346d09;
+    text-align: justify;
+  }
+  .textoderecha {
+    text-align: justify;
+  }
   .tiradetrabajos {
     grid-area: trabajos;
   }
@@ -751,9 +788,6 @@ label {
   }
   .main {
     grid-area: main;
-  }
-  .textoderecha {
-    text-align: left;
   }
   .grid-contenedor-trabajos {
     width: 100%;

@@ -23,6 +23,9 @@ body {
 .header {
     grid-area: header;
     background-color: $background-header;
+    background-image: url(../img/img-header.png);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,18 +33,19 @@ body {
     padding-bottom: 1rem;
 }
 
-.header_logo{
+.header_logo {
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 .header__img-logo {
-    width: 75%;  
-    
+    width: 75%;
+
 }
 
 .header a {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -70,7 +74,23 @@ body {
 
 .nav {
     grid-area: nav;
-    background-color: $background-nav;
+    // background-color: $background-nav;
+    background: linear-gradient(
+            $background-nav-degra-bordes,
+            $background-nav-degra-centro,
+            $background-nav-degra-centro,
+            $background-nav-degra-centro,
+            $background-nav-degra-centro,
+            $background-nav-degra-bordes);
+
+
+            // background: linear-gradient(
+            //     rgb(41, 41, 41) 5%,
+            //     rgb(255, 255, 255),
+            //     rgb(255, 255, 255),
+            //     rgb(255, 255, 255),
+            //     rgb(255, 255, 255),
+            //     rgb(41, 41, 41) 95%, );        
     display: flex;
     align-content: center;
     justify-content: center;
@@ -91,15 +111,15 @@ ul {
     font-weight: 400;
     margin-bottom: 0px;
     padding-left: 0px;
-    width: 80%;
+    width: 95%;
     height: 100%;
 
 }
 
 .nav-li a {
-    color: rgb(19, 13, 128);
+    color:$color-nav-text;
     font-size: 1.3rem;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .nav-li a:hover {
@@ -114,17 +134,18 @@ ul {
     background-color: $background-main;
 }
 
-/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca *//* CSS MAIN */
+/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */
+/* CSS MAIN */
 
 .card-h-img {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: antiquewhite;
+    padding:1rem;
 }
 
-.card-h-grid-padding_card{
-    padding:1rem;
+.card-h-grid-padding_card {
+    padding: 1rem;
 }
 
 
@@ -164,30 +185,30 @@ ul {
 }
 
 .footer__caja li {
-    color: $color-text-footer;
+    color: $color-footer-text;
     list-style-type: none;
 }
 
 .footer__caja h5 {
     font-size: 1.8rem;
-    color: $color-text-footer;
+    color: $color-footer-text;
     line-height: 1.28;
 
 }
 
 .footer__caja p {
     font-size: 1rem;
-    color: $color-text-footer;
+    color: $color-footer-text;
     line-height: 1.28;
 }
 
 .footer__caja a {
-    color: $color-text-footer;
+    color: $color-footer-text;
     text-decoration: none;
 }
 
 .footer__derechos p {
     font-size: 1rem;
-    color: $color-text-footer;
+    color: $color-footer-text;
     line-height: 1.28;
 }
