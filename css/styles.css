@@ -71,7 +71,7 @@ body {
      */
 .nav {
   grid-area: nav;
-  background: linear-gradient(#7a7a7a, #2b2b2b, #2b2b2b, #2b2b2b, #2b2b2b, #7a7a7a);
+  background: linear-gradient(#7a7a7a 5%, #202020, #202020, #202020, #202020, #7a7a7a 95%);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -498,12 +498,12 @@ label {
 
 .img-trabajo {
   width: 100%;
-  padding: 1rem;
+  height: 100%;
 }
 
 .caja1 {
   grid-area: c1;
-  background-color: rgb(122, 62, 154);
+  background-color: rgb(15, 138, 209);
 }
 
 .caja2 {

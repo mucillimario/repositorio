@@ -76,12 +76,12 @@ body {
     grid-area: nav;
     // background-color: $background-nav;
     background: linear-gradient(
-            $background-nav-degra-bordes,
+            $background-nav-degra-bordes 5%,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
-            $background-nav-degra-bordes);
+            $background-nav-degra-bordes 95%);
 
 
             // background: linear-gradient(
