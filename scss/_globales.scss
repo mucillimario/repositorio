@@ -55,12 +55,14 @@ body {
 .nav {
     grid-area: nav;
     background: linear-gradient(
-            $background-nav-degra-bordes 5%,
+            $background-nav-degra-bordes 0%,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
-            $background-nav-degra-bordes 95%);
+            $background-nav-degra-bordes 100%);
+            
+            
     display: flex;
     align-content: center;
     justify-content: center;
@@ -99,7 +101,8 @@ ul {
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-decoration-line: none;
-    background: linear-gradient(90deg, rgba(251,255,0,1) 0%, rgba(32,32,32,1) 5%, rgba(32,32,32,1) 95%, rgba(251,255,0,1) 100%);
+    background: linear-gradient(90deg, rgba(251,255,0,1) 0%, rgba(32,32,32,0) 5%, rgba(32,32,32,0) 95%, rgba(251,255,0,1) 100%);
+
 
 }
 

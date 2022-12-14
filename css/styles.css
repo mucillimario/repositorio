@@ -50,7 +50,7 @@ body {
 
 .nav {
   grid-area: nav;
-  background: linear-gradient(#7a7a7a 5%, #202020, #202020, #202020, #202020, #7a7a7a 95%);
+  background: linear-gradient(#7a7a7a 0%, #202020, #202020, #202020, #202020, #7a7a7a 100%);
   display: flex;
   align-content: center;
   justify-content: center;
@@ -86,7 +86,7 @@ ul {
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-decoration-line: none;
-  background: linear-gradient(90deg, rgb(251, 255, 0) 0%, rgb(32, 32, 32) 5%, rgb(32, 32, 32) 95%, rgb(251, 255, 0) 100%);
+  background: linear-gradient(90deg, rgb(251, 255, 0) 0%, rgba(32, 32, 32, 0) 5%, rgba(32, 32, 32, 0) 95%, rgb(251, 255, 0) 100%);
 }
 
 .main {
@@ -484,12 +484,9 @@ label {
   height: 100%;
 }
 
-.img-trabajo:hover {
-  border: solid red 3px;
-}
-
 .caja1 {
   grid-area: c1;
+  background-color: aqua;
 }
 
 .caja2 {

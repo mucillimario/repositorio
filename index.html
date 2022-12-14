@@ -5,12 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords"content= "impresiones, lonas, vinilos, grafica, cordoba, córdoba, grafica vehicular">
-  <meta name="description" content="Somos Lmk impresiones digitales de gran formato en Córdoba capital - 20 años. Contamos con la última tecnologia de impresión. ">
+  <meta name="keywords" content="impresiones, lonas, vinilos, grafica, cordoba, córdoba, grafica vehicular">
+  <meta name="description"
+    content="Somos Lmk impresiones digitales de gran formato en Córdoba capital - 20 años. Contamos con la última tecnologia de impresión. ">
   <link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+  <!-- Wow animacion -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="shortcut icon" href="img/lmk-logo.png" />
   <title>Lmk - Impresiones Digitales de Gran Formato</title>
+
 
 </head>
 
@@ -115,7 +119,7 @@
       <h2>Servicios que ofrecemos</h2>
     </div>
 
-    <div class="card-h-img main01">
+    <div class="card-h-img main01 animate__animated animate__slideInLeft wow">
       <img class="img-card-h imgservicios-750x250" src="./img/750x250px.png" alt="placeholder" />
       <img class="img-card-h imgservicios-400x250" src="./img/Img-400x250.png" alt="placeholder" />
 
@@ -134,13 +138,13 @@
         sobre rígidos( mdf, plasticos,) ó la impresion de lonas tensadas sobre bastidores de caños.
       </p>
     </div>
-    <div class="card-h-img main04">
+    <div class="card-h-img main04 animate__animated animate__slideInRight wow">
       <img class="img-card-h imgservicios-750x250" src="./img/750x250px.png" alt="placeholder" />
       <img class="img-card-h imgservicios-400x250" src="./img/Img-400x250.png" alt="placeholder" />
     </div>
 
 
-    <div class="card-h-img main05">
+    <div class="card-h-img main05 animate__animated animate__slideInLeft wow">
       <img class="img-card-h imgservicios-750x250" src="./img/750x250px.png" alt="placeholder" />
       <img class="img-card-h imgservicios-400x250" src="./img/Img-400x250.png" alt="placeholder" />
     </div>
@@ -158,7 +162,7 @@
 
     <!-- SECTION CARD VERTICALES - TRABAJOS REALIZADOS -->
 
-    <section class="tiradetrabajos">
+    <section class="tiradetrabajos animate__animated animate__fadeIn wow">
       <div>
         <h3>Trabajos realizados</h3>
       </div>
@@ -182,7 +186,7 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <footer class="footer animate__animated animate__fadeIn wow">
       <div class="footer__contendor">
         <div class="footer__caja">
           <h5>Empresa</h5>
@@ -217,6 +221,11 @@
       </div>
     </footer>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
