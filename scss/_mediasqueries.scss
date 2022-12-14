@@ -23,21 +23,7 @@
         display: flex;
     }
 
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
 
 
 
@@ -48,15 +34,18 @@
 
 @media screen and (max-width: 510px) {
 
-    // Pages -> index.html //
+
+    // Scss -> Globales.scss
+
 
     .nav {
-        grid-area: nav;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-
-    }
+            grid-area: nav;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+    
+        }
+    // Pages -> index.html //
 
     h1 {
         font-size: 1.8rem;
@@ -66,7 +55,6 @@
 
     h2 {
         font-size: 1.6rem;
-        color: blanchedalmond;
         padding: 0rem 0rem 0rem 1.5rem;
     }
 
@@ -82,7 +70,6 @@
 
     h5 {
         font-size: 1.5rem;
-        color: blanchedalmond;
         padding: 1rem 0rem 1rem 0rem;
 
     }
@@ -141,89 +128,74 @@
 
     .caja1 {
         grid-area: c1;
-        background-color: rgb(18, 121, 121);
     }
 
     .caja2 {
         grid-area: c2;
-        background-color: rgb(74, 54, 206);
     }
 
     .caja3 {
         grid-area: c3;
-        background-color: rgb(206, 69, 195);
         display: none;
     }
 
     .caja4 {
         grid-area: c4;
-        background-color: rgb(41, 200, 23);
         display: none;
     }
 
     .caja5 {
         grid-area: c5;
-        background-color: rgb(122, 62, 154);
     }
 
     .caja6 {
         grid-area: c6;
-        background-color: rgb(210, 181, 37);
     }
 
     .caja7 {
         grid-area: c7;
-        background-color: rgb(61, 22, 233);
         display: none;
     }
 
     .caja8 {
         grid-area: c8;
-        background-color: rgb(212, 118, 202);
+
         display: none;
     }
 
     .caja9 {
         grid-area: c9;
-        background-color: rgb(68, 73, 171);
     }
 
     .caja10 {
         grid-area: c10;
-        background-color: rgb(50, 177, 107);
     }
 
     .caja11 {
         grid-area: c11;
-        background-color: rgb(82, 109, 30);
         display: none;
     }
 
     .caja12 {
         grid-area: c12;
-        background-color: rgb(133, 92, 208);
         display: none;
     }
 
     .caja13 {
         grid-area: c13;
-        background-color: rgb(160, 194, 48);
         display: none;
     }
 
     .caja14 {
         grid-area: c14;
-        background-color: rgb(41, 65, 186);
     }
 
     .caja15 {
         grid-area: c15;
-        background-color: rgb(163, 60, 219);
     }
 
     .caja16 {
         grid-area: c16;
-        background-color: rgb(46, 164, 227);
         display: none;
     }
 
@@ -262,6 +234,14 @@
 /* MEDIAS QUERIES - Tamaño S*/
 
 @media screen and (max-width: 360px) {
+
+    // Scss -> Globales.scss
+
+    .nav-li a {
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+
 
     // Pages -> index.html //
 
@@ -388,89 +368,78 @@
 
     .caja1 {
         grid-area: c1;
-        background-color: rgb(18, 121, 121);
+
     }
 
     .caja2 {
         grid-area: c2;
-        background-color: rgb(74, 54, 206);
     }
 
     .caja3 {
         grid-area: c3;
-        background-color: rgb(206, 69, 195);
         display: none;
     }
 
     .caja4 {
         grid-area: c4;
-        background-color: rgb(41, 200, 23);
         display: none;
     }
 
     .caja5 {
         grid-area: c5;
-        background-color: rgb(122, 62, 154);
+
     }
 
     .caja6 {
         grid-area: c6;
-        background-color: rgb(210, 181, 37);
+
     }
 
     .caja7 {
         grid-area: c7;
-        background-color: rgb(61, 22, 233);
         display: none;
     }
 
     .caja8 {
         grid-area: c8;
-        background-color: rgb(212, 118, 202);
         display: none;
     }
 
     .caja9 {
         grid-area: c9;
-        background-color: rgb(68, 73, 171);
     }
 
     .caja10 {
         grid-area: c10;
-        background-color: rgb(50, 177, 107);
+
     }
 
     .caja11 {
         grid-area: c11;
-        background-color: rgb(82, 109, 30);
         display: none;
     }
 
     .caja12 {
         grid-area: c12;
-        background-color: rgb(133, 92, 208);
         display: none;
     }
 
     .caja13 {
         grid-area: c13;
-        background-color: rgb(160, 194, 48);
         display: none;
     }
 
     .caja14 {
         grid-area: c14;
-        background-color: rgb(41, 65, 186);
     }
 
     .caja15 {
         grid-area: c15;
-        background-color: rgb(163, 60, 219);
+
     }
 
     .caja16 {
         grid-area: c16;
-        background-color: rgb(46, 164, 227);
         display: none;
     }
 

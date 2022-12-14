@@ -48,27 +48,6 @@ body {
   justify-content: center;
 }
 
-/* CSS NAV */
-/* 
-.index__bg-nav {
-    background-image: radial-gradient(#a6d3eb, #a6d3eb);
-}
-
-.navbar-nav{
-    display: flex;
-    justify-content: center;
-    }
-
-    .nav-link {
-        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-        font-size: var(--bs-nav-link-font-size);
-        font-weight: var(--bs-nav-link-font-weight);
-        color: var(--bs-nav-link-color);
-        text-decoration: none;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-
-    }
-     */
 .nav {
   grid-area: nav;
   background: linear-gradient(#7a7a7a 5%, #202020, #202020, #202020, #202020, #7a7a7a 95%);
@@ -98,12 +77,16 @@ ul {
   color: rgb(240, 240, 240);
   font-size: 1.3rem;
   text-decoration: none;
+  transition: 1s;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .nav-li a:hover {
   font-weight: 600;
   color: rgb(255, 255, 255);
   text-decoration-line: none;
+  background: linear-gradient(90deg, rgb(251, 255, 0) 0%, rgb(32, 32, 32) 5%, rgb(32, 32, 32) 95%, rgb(251, 255, 0) 100%);
 }
 
 .main {
@@ -501,6 +484,10 @@ label {
   height: 100%;
 }
 
+.img-trabajo:hover {
+  border: solid red 3px;
+}
+
 .caja1 {
   grid-area: c1;
 }
@@ -603,7 +590,6 @@ label {
   }
   h2 {
     font-size: 1.6rem;
-    color: blanchedalmond;
     padding: 0rem 0rem 0rem 1.5rem;
   }
   h3 {
@@ -616,7 +602,6 @@ label {
   }
   h5 {
     font-size: 1.5rem;
-    color: blanchedalmond;
     padding: 1rem 0rem 1rem 0rem;
   }
   p {
@@ -653,74 +638,58 @@ label {
   }
   .caja1 {
     grid-area: c1;
-    background-color: rgb(18, 121, 121);
   }
   .caja2 {
     grid-area: c2;
-    background-color: rgb(74, 54, 206);
   }
   .caja3 {
     grid-area: c3;
-    background-color: rgb(206, 69, 195);
     display: none;
   }
   .caja4 {
     grid-area: c4;
-    background-color: rgb(41, 200, 23);
     display: none;
   }
   .caja5 {
     grid-area: c5;
-    background-color: rgb(122, 62, 154);
   }
   .caja6 {
     grid-area: c6;
-    background-color: rgb(210, 181, 37);
   }
   .caja7 {
     grid-area: c7;
-    background-color: rgb(61, 22, 233);
     display: none;
   }
   .caja8 {
     grid-area: c8;
-    background-color: rgb(212, 118, 202);
     display: none;
   }
   .caja9 {
     grid-area: c9;
-    background-color: rgb(68, 73, 171);
   }
   .caja10 {
     grid-area: c10;
-    background-color: rgb(50, 177, 107);
   }
   .caja11 {
     grid-area: c11;
-    background-color: rgb(82, 109, 30);
     display: none;
   }
   .caja12 {
     grid-area: c12;
-    background-color: rgb(133, 92, 208);
     display: none;
   }
   .caja13 {
     grid-area: c13;
-    background-color: rgb(160, 194, 48);
     display: none;
   }
   .caja14 {
     grid-area: c14;
-    background-color: rgb(41, 65, 186);
   }
   .caja15 {
     grid-area: c15;
-    background-color: rgb(163, 60, 219);
   }
   .caja16 {
     grid-area: c16;
-    background-color: rgb(46, 164, 227);
     display: none;
   }
   .footer__trabajos {
@@ -729,6 +698,10 @@ label {
 }
 /* MEDIAS QUERIES - Tamaño S*/
 @media screen and (max-width: 360px) {
+  .nav-li a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   .grid-contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
@@ -793,74 +766,58 @@ label {
   }
   .caja1 {
     grid-area: c1;
-    background-color: rgb(18, 121, 121);
   }
   .caja2 {
     grid-area: c2;
-    background-color: rgb(74, 54, 206);
   }
   .caja3 {
     grid-area: c3;
-    background-color: rgb(206, 69, 195);
     display: none;
   }
   .caja4 {
     grid-area: c4;
-    background-color: rgb(41, 200, 23);
     display: none;
   }
   .caja5 {
     grid-area: c5;
-    background-color: rgb(122, 62, 154);
   }
   .caja6 {
     grid-area: c6;
-    background-color: rgb(210, 181, 37);
   }
   .caja7 {
     grid-area: c7;
-    background-color: rgb(61, 22, 233);
     display: none;
   }
   .caja8 {
     grid-area: c8;
-    background-color: rgb(212, 118, 202);
     display: none;
   }
   .caja9 {
     grid-area: c9;
-    background-color: rgb(68, 73, 171);
   }
   .caja10 {
     grid-area: c10;
-    background-color: rgb(50, 177, 107);
   }
   .caja11 {
     grid-area: c11;
-    background-color: rgb(82, 109, 30);
     display: none;
   }
   .caja12 {
     grid-area: c12;
-    background-color: rgb(133, 92, 208);
     display: none;
   }
   .caja13 {
     grid-area: c13;
-    background-color: rgb(160, 194, 48);
     display: none;
   }
   .caja14 {
     grid-area: c14;
-    background-color: rgb(41, 65, 186);
   }
   .caja15 {
     grid-area: c15;
-    background-color: rgb(163, 60, 219);
   }
   .caja16 {
     grid-area: c16;
-    background-color: rgb(46, 164, 227);
     display: none;
   }
   .footer__trabajos {

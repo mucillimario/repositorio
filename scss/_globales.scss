@@ -49,32 +49,11 @@ body {
     justify-content: center;
 }
 
-/* CSS NAV */
-/* 
-.index__bg-nav {
-    background-image: radial-gradient(#a6d3eb, #a6d3eb);
-}
 
-.navbar-nav{
-    display: flex;
-    justify-content: center;
-    }
-
-    .nav-link {
-        padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
-        font-size: var(--bs-nav-link-font-size);
-        font-weight: var(--bs-nav-link-font-weight);
-        color: var(--bs-nav-link-color);
-        text-decoration: none;
-        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
-
-    }
-     */
 
 
 .nav {
     grid-area: nav;
-    // background-color: $background-nav;
     background: linear-gradient(
             $background-nav-degra-bordes 5%,
             $background-nav-degra-centro,
@@ -82,15 +61,6 @@ body {
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-bordes 95%);
-
-
-            // background: linear-gradient(
-            //     rgb(41, 41, 41) 5%,
-            //     rgb(255, 255, 255),
-            //     rgb(255, 255, 255),
-            //     rgb(255, 255, 255),
-            //     rgb(255, 255, 255),
-            //     rgb(41, 41, 41) 95%, );        
     display: flex;
     align-content: center;
     justify-content: center;
@@ -120,12 +90,17 @@ ul {
     color:$color-nav-text;
     font-size: 1.3rem;
     text-decoration: none;
-}
+    transition: 1s;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
 
 .nav-li a:hover {
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-decoration-line: none;
+    background: linear-gradient(90deg, rgba(251,255,0,1) 0%, rgba(32,32,32,1) 5%, rgba(32,32,32,1) 95%, rgba(251,255,0,1) 100%);
+
 }
 
 ////// main
