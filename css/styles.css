@@ -557,7 +557,6 @@ label {
 .efecto_galeria_trabajos:hover .textos_trabajos_galeria {
   transform: translateY(20%);
 }
-
 .efecto_galeria_trabajos:hover .img-trabajo_galeria {
   transform: scale(1.4);
 }
@@ -572,14 +571,12 @@ label {
   transform: translateY(100%);
   transition: all 0.5s ease-out;
 }
-
 .textos_trabajos_galeria h4 {
   color: rgb(9, 88, 65);
   margin-top: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
 }
-
 .textos_trabajos_galeria p {
   color: red;
   padding-top: 5px;

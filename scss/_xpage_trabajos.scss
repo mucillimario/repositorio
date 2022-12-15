@@ -115,13 +115,17 @@
 
 }
 
-.efecto_galeria_trabajos:hover .textos_trabajos_galeria {
-    transform: translateY(20%);
+.efecto_galeria_trabajos:hover {
+
+    .textos_trabajos_galeria {
+        transform: translateY(20%);
+    }
+
+    .img-trabajo_galeria {
+        transform: scale(1.4);
+    }
 }
 
-.efecto_galeria_trabajos:hover .img-trabajo_galeria {
-    transform: scale(1.4);
-}
 
 // Galeria de trabajo - Textos - efectos y animaciones
 
@@ -134,22 +138,23 @@
     color: #fff;
     transform: translateY(100%);
     transition: all 0.5s ease-out;
+
+    h4 {
+        color: rgb(9, 88, 65);
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    p {
+        color: red;
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+
+
 }
 
-
-
-.textos_trabajos_galeria h4 {
-    color: rgb(9, 88, 65);
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.textos_trabajos_galeria p {
-    color: red;
-    padding-top: 5px;
-    padding-bottom: 25px;
-}
 
 // Grid Footer
 
