@@ -479,14 +479,8 @@ label {
   grid-area: main_t;
 }
 
-.img-trabajo {
-  width: 100%;
-  height: 100%;
-}
-
 .caja1 {
   grid-area: c1;
-  background-color: aqua;
 }
 
 .caja2 {
@@ -547,6 +541,49 @@ label {
 
 .caja16 {
   grid-area: c16;
+}
+
+.img-trabajo_galeria {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.efecto_galeria_trabajos {
+  position: relative;
+  overflow: hidden;
+}
+
+.efecto_galeria_trabajos:hover .textos_trabajos_galeria {
+  transform: translateY(20%);
+}
+
+.efecto_galeria_trabajos:hover .img-trabajo_galeria {
+  transform: scale(1.4);
+}
+
+.textos_trabajos_galeria {
+  position: absolute;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  background: rgba(88, 134, 28, 0.95);
+  color: #fff;
+  transform: translateY(100%);
+  transition: all 0.5s ease-out;
+}
+
+.textos_trabajos_galeria h4 {
+  color: rgb(9, 88, 65);
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.textos_trabajos_galeria p {
+  color: red;
+  padding-top: 5px;
+  padding-bottom: 25px;
 }
 
 .footer__trabajos {

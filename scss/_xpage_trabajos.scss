@@ -32,24 +32,9 @@
     grid-area: main_t;
 }
 
-.img-trabajo {
-    width: 100%;
-    height: 100%;
-
-}
-
-.img-trabajo:hover{
-
-
-
-
-    
-}
-
+// Inicia las grids de la galeria de trajos //
 .caja1 {
     grid-area: c1;
-    background-color: aqua; 
-
 }
 
 .caja2 {
@@ -114,6 +99,59 @@
     grid-area: c16;
 
 }
+
+// Galeria de trabajo - Imágenes - efectos y animaciones
+
+.img-trabajo_galeria {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+
+.efecto_galeria_trabajos {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.efecto_galeria_trabajos:hover .textos_trabajos_galeria {
+    transform: translateY(20%);
+}
+
+.efecto_galeria_trabajos:hover .img-trabajo_galeria {
+    transform: scale(1.4);
+}
+
+// Galeria de trabajo - Textos - efectos y animaciones
+
+.textos_trabajos_galeria {
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    background: rgba($color: #58861c, $alpha: .95);
+    color: #fff;
+    transform: translateY(100%);
+    transition: all 0.5s ease-out;
+}
+
+
+
+.textos_trabajos_galeria h4 {
+    color: rgb(9, 88, 65);
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.textos_trabajos_galeria p {
+    color: red;
+    padding-top: 5px;
+    padding-bottom: 25px;
+}
+
+// Grid Footer
 
 .footer__trabajos {
     grid-area: footer;
