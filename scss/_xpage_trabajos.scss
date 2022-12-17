@@ -131,22 +131,17 @@
 .textos_trabajos_galeria {
     position: absolute;
     bottom: 0;
-    padding: 15px;
     width: 100%;
-    background: rgba($color: #58861c, $alpha: .95);
+    background: rgba($color: #823e6b, $alpha: .95);
     color: #fff;
     transform: translateY(100%);
     transition: all 0.5s ease-out;
 
-    h4 {
-        margin-top: 0px;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
+
 
     p {
-        padding-top: 5px;
-        padding-bottom: 25px;
+        padding: 10px 10px 20px 10px;
+        text-align: center;
     }
 
 

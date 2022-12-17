@@ -212,6 +212,7 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #d5d3d3;
+  line-height: 1.5rem;
   padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
@@ -563,21 +564,15 @@ label {
 .textos_trabajos_galeria {
   position: absolute;
   bottom: 0;
-  padding: 15px;
   width: 100%;
-  background: rgba(88, 134, 28, 0.95);
+  background: rgba(130, 62, 107, 0.95);
   color: #fff;
   transform: translateY(100%);
   transition: all 0.5s ease-out;
 }
-.textos_trabajos_galeria h4 {
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 .textos_trabajos_galeria p {
-  padding-top: 5px;
-  padding-bottom: 25px;
+  padding: 10px 10px 20px 10px;
+  text-align: center;
 }
 
 .footer__trabajos {
@@ -779,7 +774,7 @@ label {
   .grid-contenedor-equipos {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "header" "nav" "main" "main1" "main2" "main4" "main3" "main5" "main6" "main7" "main8" "footer";
+    grid-template-areas: "header" "nav" "main" "main1" "main2" "main4" "main3" "main5" "main6" "main8" "main7" "footer";
   }
   .nav {
     grid-area: nav;
