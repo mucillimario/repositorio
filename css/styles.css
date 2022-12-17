@@ -97,14 +97,16 @@ ul {
 /* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */
 /* CSS MAIN */
 .card-h-img {
-  width: 100%;
   display: flex;
   justify-content: center;
   padding: 1rem;
+  background-color: aqua;
 }
 
 .card-h-grid-padding_card {
   padding: 1rem;
+  background-color: brown;
+  opacity: 0.7;
 }
 
 /* CSS INDEX-FOOTER */
