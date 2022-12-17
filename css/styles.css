@@ -23,7 +23,7 @@ body {
 .header {
   grid-area: header;
   background-color: #fbff00;
-  background-image: url(../img/img-header.png);
+  background-image: url(../img/Img_header.png);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -173,7 +173,7 @@ h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
-  color: #d5d3d3;
+  color: #ffffff;
   text-align: center;
   margin: 0.5rem 0rem 0.5rem 0rem;
 }
@@ -182,7 +182,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 2rem;
-  color: #d5d3d3;
+  color: #ffffff;
   padding: 0rem 0rem 0rem 1.5rem;
 }
 
@@ -190,28 +190,31 @@ h3 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
-  color: #d5d3d3;
+  color: rgb(25, 25, 25);
   margin: 1.5rem 0rem 0rem 0rem;
+  background-color: #fbff00;
+  border-radius: 10px;
+  padding: 1%;
 }
 
 h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
-  color: #d5d3d3;
+  color: #ffffff;
   margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h5 {
   font-family: "Montserrat", sans-serif;
   font-size: 1.3rem;
-  color: #d5d3d3;
+  color: #ffffff;
   padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
-  color: #d5d3d3;
+  color: #ffffff;
   line-height: 1.5rem;
   padding: 1.5rem 0rem 1.5rem 0rem;
 }
@@ -293,6 +296,7 @@ p {
 
 .card-v-img {
   width: 16%;
+  border-radius: 7px;
 }
 
 .imgtrabajosmobile {
