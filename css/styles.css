@@ -100,12 +100,10 @@ ul {
   display: flex;
   justify-content: center;
   padding: 1rem;
-  background-color: aqua;
 }
 
 .card-h-grid-padding_card {
   padding: 1rem;
-  background-color: brown;
   opacity: 0.7;
 }
 
