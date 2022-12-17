@@ -565,7 +565,7 @@ label {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(130, 62, 107, 0.95);
+  background: rgba(31, 58, 88, 0.85);
   color: #fff;
   transform: translateY(100%);
   transition: all 0.5s ease-out;

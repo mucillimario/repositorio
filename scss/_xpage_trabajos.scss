@@ -132,19 +132,16 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: rgba($color: #823e6b, $alpha: .95);
+    background: $color-trabajos-emergente;
     color: #fff;
     transform: translateY(100%);
     transition: all 0.5s ease-out;
-
 
 
     p {
         padding: 10px 10px 20px 10px;
         text-align: center;
     }
-
-
 }
 
 
