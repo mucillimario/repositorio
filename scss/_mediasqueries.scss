@@ -1,7 +1,9 @@
-
 /* MEDIA QUERIES - Tamano L*/
 @media screen and (max-width: 799px) {
 
+
+
+    /////////////////
     .imgtrabajosmobile {
         display: flex;
     }
@@ -37,7 +39,7 @@
 
     .form-textarea {
         height: 10rem;
-        }
+    }
 
     .mapa {
         width: 98%;
@@ -57,13 +59,17 @@
 
     // Scss -> Globales.scss
 
-
     .nav {
         grid-area: nav;
         display: flex;
         align-content: center;
         justify-content: center;
 
+    }
+
+    .nav-li a {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     // Pages -> index.html //
@@ -119,7 +125,6 @@
     .grid-contenedor-trabajos {
         width: 100%;
         margin: 0 auto;
-        font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto 40px auto auto auto auto auto;
@@ -267,7 +272,7 @@
 
     .grid-contenedor {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto 40px auto auto auto auto auto auto auto auto auto auto;
         grid-template-areas:
             "header"
             "nav"
@@ -301,7 +306,6 @@
     }
 
     p {
-        color: #346d09;
         text-align: justify;
     }
 
@@ -357,7 +361,6 @@
     .grid-contenedor-trabajos {
         width: 100%;
         margin: 0 auto;
-        font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto 40px auto auto auto auto auto auto auto auto;
@@ -487,11 +490,11 @@
         padding: 30px;
     }
 
-    .mapaincustrado_grande{
+    .mapaincustrado_grande {
         width: 100%;
         height: 250px;
     }
-    
+
 
     // Fotter General //
 

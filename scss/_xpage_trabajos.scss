@@ -3,7 +3,6 @@
 .grid-contenedor-trabajos {
     width: 100%;
     margin: 0 auto;
-    font-family: 'Lucirgb(199, 70, 70)Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto 40px auto auto auto auto auto;
@@ -140,14 +139,12 @@
     transition: all 0.5s ease-out;
 
     h4 {
-        color: rgb(9, 88, 65);
         margin-top: 0px;
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
     p {
-        color: red;
         padding-top: 5px;
         padding-bottom: 25px;
     }

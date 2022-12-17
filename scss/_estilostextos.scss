@@ -3,49 +3,62 @@
 /* Estilos de textos   */
 // Dispositivo Desktop//
 
+
 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 2.5rem;
-    color: rgb(226, 134, 43);
+    color: $color-text-h1;
     text-align: center;
     margin: .5rem 0rem .5rem 0rem;
 }
 
 h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 2rem;
-    color: blanchedalmond;
+    color: $color-text-h2;
     padding: 0rem 0rem 0rem 1.5rem;
 }
 
 h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     font-size: 1.8rem;
-    color: coral;
+    color: $color-text-h3;
     margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h4 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
+    color: $color-text-h4;
     margin: 1.5rem 0rem 0rem 0rem;
 }
 
 h5 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
-    color: rgb(84, 54, 11);
+    color: $color-text-h5;
     padding: 1.5rem 0rem 1.5rem 0rem;
 
 }
 
-p {
+p {    
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
-    color: rgb(84, 54, 11);
+    color: $color-text-p;
     padding: 1.5rem 0rem 1.5rem 0rem;
 
 }
 
-.tiradetrabajos h3 {
-    color: darkgreen;
+.tiradetrabajos {
+    h3 {
+        color:$color-trabajos-h3;
+    }
+
 }
 
 .textoderecha {
     text-align: right;
 }
-
