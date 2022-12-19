@@ -89,3 +89,8 @@
 .imgtrabajosgrande {
     display: flex;
 }
+
+.carousel-item {
+    object-fit:fill;
+    height: 300px;
+}
