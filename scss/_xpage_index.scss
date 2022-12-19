@@ -48,30 +48,16 @@
     grid-area: main6;
 }
 
-.img-card-h {
-    object-fit: contain;
-}
-
-.imgservicios-750x250 {
-    display:flex;
-}
-
-.imgservicios-400x250 {
-    display:none;
-}
-
 /* CSS INDEX-TRABAJOS */
 
 .tiradetrabajos {
     grid-area: trabajos;
-    display: flex;
-    flex-wrap: wrap;
+    @extend .DISPLAY_flex_FLEX-WRAP_wrap;
     background-color: $background-trabajos;
 }
 
 .trabajos {
-    display: flex;
-    flex-wrap: wrap;
+    @extend .DISPLAY_flex_FLEX-WRAP_wrap;
     width: 100%;
     justify-content: space-between;
     padding: 1rem 0rem;
@@ -82,15 +68,16 @@
     border-radius: 7px;
 }
 
-.imgtrabajosmobile {
-    display: none;
-}
-
-.imgtrabajosgrande {
+.img_index_trabajos_M {
     display: flex;
 }
 
+.img_index_trabajos_S {
+    display: none;
+}
+
+
 .carousel-item {
-    object-fit:fill;
+    object-fit: fill;
     height: 300px;
 }

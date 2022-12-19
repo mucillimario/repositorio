@@ -30,8 +30,7 @@
 .materiales_materiales {
     grid-area: materiales;
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    @extend .DISPLAY_flex_FLEX-WRAP_wrap;
     justify-content: center;
 }
 

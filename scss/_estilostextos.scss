@@ -18,7 +18,7 @@ h2 {
     font-weight: 600;
     font-size: 2rem;
     color: $color-text-h2;
-    padding: 0rem 0rem 0rem 1.5rem;
+    padding: 1.5rem 0rem 0rem 1.5rem;
 }
 
 h3 {
@@ -31,6 +31,12 @@ h3 {
     border-radius: 10px;
     padding: 1%;
 }
+
+#index_trabajos_titulo{
+    color:$background-main;
+    padding: 0rem 0rem 0rem 1.5rem;
+}
+
 
 h4 {
     font-family: 'Montserrat', sans-serif;
@@ -55,12 +61,6 @@ p {
     padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
-.tiradetrabajos {
-    h3 {
-        color:$color-trabajos-h3;
-    }
-
-}
 
 .textoderecha {
     text-align: right;

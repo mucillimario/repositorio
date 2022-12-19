@@ -27,16 +27,14 @@ body {
     background-size: cover;
     background-position: center;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend .DISPLAY_flex_Justify-content_center;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
 
 .header_logo {
     width: 100%;
-    display: flex;
-    justify-content: center;
+    @extend .DISPLAY_flex_Justify-content_center;
 }
 
 .header__img-logo {
@@ -45,27 +43,20 @@ body {
 }
 
 .header a {
-    display: flex;
-    justify-content: center;
+    @extend .DISPLAY_flex_Justify-content_center;
 }
-
-
-
 
 .nav {
     grid-area: nav;
-    background: linear-gradient(
-            $background-nav-degra-bordes 0%,
+    background: linear-gradient($background-nav-degra-bordes 0%,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-centro,
             $background-nav-degra-bordes 100%);
-            
-            
-    display: flex;
     align-content: center;
-    justify-content: center;
+    @extend .DISPLAY_flex_Justify-content_center;
+
 
 }
 
@@ -89,19 +80,19 @@ ul {
 }
 
 .nav-li a {
-    color:$color-nav-text;
+    color: $color-nav-text;
     font-size: 1.3rem;
     text-decoration: none;
     transition: 1s;
     padding-left: 10px;
     padding-right: 10px;
-    }
+}
 
 .nav-li a:hover {
     font-weight: 600;
     color: rgb(255, 255, 255);
     text-decoration-line: none;
-    background: linear-gradient(90deg, rgba(251,255,0,1) 0%, rgba(32,32,32,0) 5%, rgba(32,32,32,0) 95%, rgba(251,255,0,1) 100%);
+    background: linear-gradient(90deg, rgba(251, 255, 0, 1) 0%, rgba(32, 32, 32, 0) 5%, rgba(32, 32, 32, 0) 95%, rgba(251, 255, 0, 1) 100%);
 
 
 }
@@ -112,21 +103,33 @@ ul {
     background-color: $background-main;
 }
 
-/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */
+
+
 /* CSS MAIN */
+// Globales de Index y Equipos - Grids horizontales que ingresan por derecha o izquierda //
+
+
+.img-card-h {
+    object-fit: contain;
+}
+
+.img_index_servicios_XL {
+    display: flex;
+}
+
+.img_index_servicios_L {
+    display: none;
+}
 
 .card-h-img {
-    // width: 80%;
-    display: flex;
-    justify-content: center;
-    padding:1rem;
+    @extend .DISPLAY_flex_Justify-content_center;
+    padding: 1rem;
 
 }
 
 .card-h-grid-padding_card {
     padding: 1rem;
 }
-
 
 /* CSS INDEX-FOOTER */
 
@@ -137,9 +140,8 @@ ul {
 
 .footer__contendor {
     width: 100%;
-    display: flex;
+    @extend .DISPLAY_flex_Justify-content_center;
     flex-wrap: wrap;
-    justify-content: center;
     padding-top: 2rem;
 }
 
@@ -190,4 +192,16 @@ ul {
     font-size: 1rem;
     color: $color-footer-text;
     line-height: 1.28;
+}
+
+/* AQUI ESTAN LOS EXTENDS */
+
+.DISPLAY_flex_FLEX-WRAP_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.DISPLAY_flex_Justify-content_center {
+    display: flex;
+    justify-content: center
 }

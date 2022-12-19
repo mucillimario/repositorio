@@ -27,33 +27,22 @@ body {
   background-size: cover;
   background-position: center;
   width: 100%;
-  display: flex;
-  justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
 .header_logo {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .header__img-logo {
   width: 75%;
 }
 
-.header a {
-  display: flex;
-  justify-content: center;
-}
-
 .nav {
   grid-area: nav;
   background: linear-gradient(#7a7a7a 0%, #202020, #202020, #202020, #202020, #7a7a7a 100%);
-  display: flex;
   align-content: center;
-  justify-content: center;
 }
 
 ul {
@@ -74,7 +63,7 @@ ul {
 }
 
 .nav-li a {
-  color: rgb(240, 240, 240);
+  color: #ffffff;
   font-size: 1.3rem;
   text-decoration: none;
   transition: 1s;
@@ -94,11 +83,20 @@ ul {
   background-color: rgb(25, 25, 25);
 }
 
-/* CSS - Cards Horizontales - ya que se repiten en 2 htmls lo planteo aca */
 /* CSS MAIN */
-.card-h-img {
+.img-card-h {
+  object-fit: contain;
+}
+
+.img_index_servicios_XL {
   display: flex;
-  justify-content: center;
+}
+
+.img_index_servicios_L {
+  display: none;
+}
+
+.card-h-img {
   padding: 1rem;
 }
 
@@ -114,9 +112,7 @@ ul {
 
 .footer__contendor {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding-top: 2rem;
 }
 
@@ -167,6 +163,17 @@ ul {
   line-height: 1.28;
 }
 
+/* AQUI ESTAN LOS EXTENDS */
+.DISPLAY_flex_FLEX-WRAP_wrap, .materiales_materiales, .trabajos, .tiradetrabajos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DISPLAY_flex_Justify-content_center, .header, .header_logo, .header a, .nav, .card-h-img, .footer__contendor {
+  display: flex;
+  justify-content: center;
+}
+
 /* Estilos de textos   */
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -182,7 +189,7 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
   color: #ffffff;
-  padding: 0rem 0rem 0rem 1.5rem;
+  padding: 1.5rem 0rem 0rem 1.5rem;
 }
 
 h3 {
@@ -194,6 +201,11 @@ h3 {
   background-color: #fbff00;
   border-radius: 10px;
   padding: 1%;
+}
+
+#index_trabajos_titulo {
+  color: rgb(25, 25, 25);
+  padding: 0rem 0rem 0rem 1.5rem;
 }
 
 h4 {
@@ -216,10 +228,6 @@ p {
   color: #ffffff;
   line-height: 1.5rem;
   padding: 1.5rem 0rem 1.5rem 0rem;
-}
-
-.tiradetrabajos h3 {
-  color: rgb(216, 220, 187);
 }
 
 .textoderecha {
@@ -265,29 +273,13 @@ p {
   grid-area: main6;
 }
 
-.img-card-h {
-  object-fit: contain;
-}
-
-.imgservicios-750x250 {
-  display: flex;
-}
-
-.imgservicios-400x250 {
-  display: none;
-}
-
 /* CSS INDEX-TRABAJOS */
 .tiradetrabajos {
   grid-area: trabajos;
-  display: flex;
-  flex-wrap: wrap;
   background-color: #fbff00;
 }
 
 .trabajos {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   padding: 1rem 0rem;
@@ -298,12 +290,12 @@ p {
   border-radius: 7px;
 }
 
-.imgtrabajosmobile {
-  display: none;
+.img_index_trabajos_M {
+  display: flex;
 }
 
-.imgtrabajosgrande {
-  display: flex;
+.img_index_trabajos_S {
+  display: none;
 }
 
 .carousel-item {
@@ -452,8 +444,6 @@ label {
 .materiales_materiales {
   grid-area: materiales;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -599,10 +589,10 @@ label {
     min-width: 48%;
     padding-bottom: 1rem;
   }
-  .imgservicios-750x250 {
+  .img_index_servicios_XL {
     display: none;
   }
-  .imgservicios-400x250 {
+  .img_index_servicios_L {
     display: flex;
   }
   .section-contacto {
@@ -643,7 +633,7 @@ label {
   }
   h3 {
     font-size: 1.5rem;
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 1rem 0rem 1rem 0rem;
   }
   h4 {
     font-size: 1.3rem;
