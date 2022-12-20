@@ -88,11 +88,11 @@ ul {
   object-fit: contain;
 }
 
-.img_index_servicios_XL {
+.img_display_si_no_XL {
   display: flex;
 }
 
-.img_index_servicios_L {
+.img_display_si_no_L {
   display: none;
 }
 
@@ -246,6 +246,12 @@ p {
 /* CSS CARRUSEL */
 .carrusel {
   grid-area: carrusel;
+}
+
+.w-100 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* CSS MAIN SERVICIOS */
@@ -579,21 +585,17 @@ label {
 
 /* MEDIA QUERIES - Tamano L*/
 @media screen and (max-width: 799px) {
-  .imgtrabajosmobile {
-    display: flex;
-  }
-  .imgtrabajosgrande {
-    display: none;
-  }
   .card-v-img {
     min-width: 48%;
     padding-bottom: 1rem;
   }
   .img_index_servicios_XL {
     display: none;
+    border: solid 3px red;
   }
   .img_index_servicios_L {
     display: flex;
+    border: solid 3px rgb(18, 10, 103);
   }
   .section-contacto {
     display: flex;
